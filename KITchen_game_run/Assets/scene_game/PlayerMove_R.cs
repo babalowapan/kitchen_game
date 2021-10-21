@@ -72,7 +72,7 @@ public class PlayerMove_R : MonoBehaviour
 
             timer += Time.deltaTime;
             move = timer * sp;
-            rbody2D.velocity = new Vector3(-5, rbody2D.velocity.y, 0);
+            rbody2D.velocity = new Vector3(-6, rbody2D.velocity.y, 0);
 
         }
     }

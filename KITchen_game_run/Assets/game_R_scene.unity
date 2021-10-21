@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79294dfeb8d459bbe9fa1e747f308d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  back: {fileID: 3112015972807951551, guid: 7f87debbaa8dd4a78bd2c12a375599be, type: 3}
 --- !u!4 &55567798
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,7 +1337,7 @@ MonoBehaviour:
   st: {fileID: 0}
   gravity: 0
   PlayerX: 0
-  Jumppower: 30
+  Jumppower: 70
   time: 0
 --- !u!50 &1401698038
 Rigidbody2D:
@@ -1353,7 +1354,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 15
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
