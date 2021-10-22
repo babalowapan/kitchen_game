@@ -39,7 +39,6 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(pos_other);
         gc_L = GetComponent<GameoverCheck>();
         gc_R = GetComponent<GameoverCheck_R>();
         st = GetComponent<StopFloor>();
@@ -94,18 +93,18 @@ public class PlayerMove : MonoBehaviour
             
         }
 
-        if (st.IsFloor())
+        /*if (st.IsFloor())
         {
 
             rbody2D.velocity = new Vector3(0, rbody2D.velocity.y, 0);
         }
         else
-        {
+        {*/
             reset_time += Time.deltaTime;
             timer += Time.deltaTime;
             move = timer * sp;
             rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
-        }
+        //}
 
     }
 
