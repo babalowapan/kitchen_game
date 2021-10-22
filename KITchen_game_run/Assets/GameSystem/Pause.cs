@@ -7,23 +7,26 @@ public class Pause : MonoBehaviour
 	//　ポーズした時に表示するUIのプレハブ
 	public GameObject Pause_RestartPrefab;
 	//　ポーズUIのインスタンス
-	private GameObject pauseUIInstance;
-
+	private bool pauseUIInstance = false;
 	// Update is called once per frame
 	void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Q))
 		{
 
-			if (pauseUIInstance == null)
+			if (pauseUIInstance == false)
 			{
-				pauseUIInstance = GameObject.Instantiate(Pause_RestartPrefab) as GameObject;
+				Pause_RestartPrefab.SetActive(true);
 				Time.timeScale = 0f;
+				pauseUIInstance = true;
+				Instantiate(Pause_RestartPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 			}
 			else
 			{
-				Destroy(pauseUIInstance);
+				Pause_RestartPrefab.SetActive(false);
 				Time.timeScale = 1f;
+				pauseUIInstance = false;
+				
 			}
 		}
 	}
