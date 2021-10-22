@@ -29,12 +29,17 @@ public class PlayerMove : MonoBehaviour
     private float move;
     private float reset_time;
     public float time;
+    public GameObject other;
     float m_time;
     float minute;
+    Vector3 pos;
+    private float Y = -45;
+    Vector3 pos_other;
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(pos_other);
         gc_L = GetComponent<GameoverCheck>();
         gc_R = GetComponent<GameoverCheck_R>();
         st = GetComponent<StopFloor>();
@@ -44,20 +49,29 @@ public class PlayerMove : MonoBehaviour
         anim.SetBool("run", false);
         minute = 0;
         m_time = 0;
+        pos = this.gameObject.transform.position;
+        pos_other = other.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gc_L.GameOver()||gc_R.GameOver())
-        {
-            anim.SetTrigger("down");
-        }
-        else
+        if (pos.y <= Y||pos_other.y <= Y)
         {
 
+            anim.SetTrigger("down");
+            FadeManager.FadeOut(2);
+            Invoke("stop",0.5f);
+            this.gameObject.SetActive(false);
+        }
+
+        if(Time.timeScale == 1)
+        {
+            pos = this.gameObject.transform.position;
+            pos_other = other.transform.position;
             if (ground.IsGround())//地面に接地しているとき
-            {                isGround = true;
+            {
+                isGround = true;
                 if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
                 {
                     anim.SetBool("run",false);
@@ -77,21 +91,27 @@ public class PlayerMove : MonoBehaviour
                 anim.SetTrigger("fall");
                 isGround = false;
             }
-            else if (st.IsFloor())
-            {
-                rbody2D.AddForce(Vector3.up * 0);
-            }
             
+        }
+
+        if (st.IsFloor())
+        {
+
+            rbody2D.velocity = new Vector3(0, rbody2D.velocity.y, 0);
+        }
+        else
+        {
+            reset_time += Time.deltaTime;
+            timer += Time.deltaTime;
+            move = timer * sp;
+            rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
         }
 
     }
 
-    void FixedUpdate()
+    void stop()
     {
-        reset_time += Time.deltaTime;
-        timer += Time.deltaTime;
-        move = timer * sp;
-        rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
+        Time.timeScale = 0;
     }
 
     

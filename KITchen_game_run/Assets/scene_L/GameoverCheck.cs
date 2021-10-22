@@ -9,21 +9,20 @@ public class GameoverCheck : MonoBehaviour
     private string groundTag = "over";
     private bool isGround = false;
     private bool isGroundEnter, isGroundStay, isGroundExit;
-    public static bool Over_L;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Over_L = false;
+
     }
 
     public bool GameOver()
     {
         if (isGroundEnter || isGroundStay)
         {
+            Debug.Log(GameOver());
             isGround = true;
-            Over_L = true;
         }
         else if (isGroundExit)
         {

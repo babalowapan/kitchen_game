@@ -5,8 +5,8 @@ using UnityEngine;
 public class StopFloor : MonoBehaviour
 {
     private string groundTag = "stop";
-    private bool isGround = false;
-    private bool isGroundEnter, isGroundStay, isGroundExit;
+    private bool isStop = false;
+    private bool isStopEnter, isStopStay, isStopExit;
 
 
     // Start is called before the first frame update
@@ -17,27 +17,28 @@ public class StopFloor : MonoBehaviour
 
     public bool IsFloor()
     {
-        if (isGroundEnter || isGroundStay)
+        if (isStopEnter || isStopStay)
         {
-            isGround = true;
+            isStop = true;
             Debug.Log("HHHHHH");
         }
-        else if (isGroundExit)
+        else if (isStopExit)
         {
-            isGround = false;
+            isStop = false;
         }
 
-        isGroundEnter = false;
-        isGroundStay = false;
-        isGroundExit = false;
-        return isGround;
+        Debug.Log("!!!!");
+        isStopEnter = false;
+        isStopStay = false;
+        isStopExit = false;
+        return isStop;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)//空中から接地
     {
         if (collision.tag == groundTag)
         {
-            isGroundEnter = true;
+            isStopEnter = true;
         }
     }
 
@@ -45,7 +46,7 @@ public class StopFloor : MonoBehaviour
     {
         if (collision.tag == groundTag)
         {
-            isGroundStay = true;
+            isStopStay = true;
         }
     }
 
@@ -53,7 +54,7 @@ public class StopFloor : MonoBehaviour
     {
         if (collision.tag == groundTag)
         {
-            isGroundExit = true;
+            isStopExit = true;
         }
     }
 }

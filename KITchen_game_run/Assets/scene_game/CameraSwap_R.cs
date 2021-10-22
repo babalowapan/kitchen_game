@@ -29,6 +29,7 @@ public class CameraSwap_R : MonoBehaviour
                 cam.ResetWorldToCameraMatrix();
                 cam.ResetProjectionMatrix();
                 cam.projectionMatrix = cam.projectionMatrix * Matrix4x4.Scale(scale);
+                cam.rect = new Rect(0, 0, 0.5f, 1.0f);
                 timer = 0;
             }
             else
@@ -36,6 +37,7 @@ public class CameraSwap_R : MonoBehaviour
                 cam.ResetWorldToCameraMatrix();
                 cam.ResetProjectionMatrix();
                 timer = 0;
+                cam.rect = new Rect(0.5f, 0, 0.5f, 1.0f);
             }
 
             if (swap)

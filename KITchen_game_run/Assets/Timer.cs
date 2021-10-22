@@ -27,12 +27,7 @@ public class Timer : MonoBehaviour
 
 	void Update()
 	{
-		if (GameoverCheck_R.Over_R||GameoverCheck.Over_L)
-		{
-			score_t = seconds;
-			time = minute.ToString("00") + ":" + ((int)seconds).ToString("00");
-			Debug.Log(score_t);
-		}
+		score_t += Time.deltaTime * 2;
 		seconds += Time.deltaTime;
 		if (seconds >= 60f)
 		{

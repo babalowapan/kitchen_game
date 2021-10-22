@@ -18,7 +18,6 @@ public class Score : MonoBehaviour
 		time = Timer.score_t;
 		T_time = Timer.time;
 		Debug.Log(T_time);
-		ScoreText.text = T_time;
 	}
 
 	
