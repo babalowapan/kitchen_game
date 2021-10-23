@@ -21,13 +21,10 @@ public class CameraSwap : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void swap_L()
     {
-        if (Switch.ispush)
-        {
-            Debug.Log("ttttt");
-            if (Switch.Move_select == move_num)
-            {
+        
+           
                 if (swap)
                 {
                     swap = false;
@@ -36,9 +33,8 @@ public class CameraSwap : MonoBehaviour
                 {
                     swap = true;
                 }
-            }
             
-        }
+            
 
         if (swap)
             {

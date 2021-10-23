@@ -9,6 +9,8 @@ public class Switch : MonoBehaviour
 	BoxCollider2D col;
 	private bool check = true;
 	private string groundTag = "under_c";
+	GameObject s_L;
+	GameObject s_R;
 	public int move_select;	//スイッチと連動させる壁を指定したい
 	public int Move_select
     {
@@ -27,6 +29,8 @@ public class Switch : MonoBehaviour
 	{
 		rb = this.gameObject.GetComponent<Rigidbody2D>();
 		col = this.gameObject.GetComponent<BoxCollider2D>();
+		s_L = GameObject.Find("CameraSwap");
+		s_R = GameObject.Find("CameraSwap_R");
 	}
 
 	// Update is called once per frame
@@ -38,8 +42,13 @@ public class Switch : MonoBehaviour
 	{
 		if (check)
 		{
-			if (collision.tag == groundTag)
+			if (collision.tag == "under_c")
 			{
+				if(move_select == 2)
+                {
+					s_L.GetComponent<CameraSwap>().swap_L();
+					s_R.GetComponent<CameraSwap_R>().swap_R();
+                }
 				IsPush = true;
 				check = false;
 				Debug.Log(IsPush);
