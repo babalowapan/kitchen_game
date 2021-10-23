@@ -8,28 +8,31 @@ public class Move : MonoBehaviour
     float time;
     private Rigidbody2D rb;
     bool check = true;
+    public float moveX;
+    public float moveY;
+    public float timer;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector3(0, 3f, 0);
+        rb.velocity = new Vector3(moveX, moveY, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if(time >= 3)
+        if(time >= timer)
         {
             if (check)
             {
-                rb.velocity = new Vector3(0, -3f, 0);
+                rb.velocity = new Vector3(moveX*-1, moveY*-1, 0);
                 check = false;
                 time = 0;
             }
             else
             {
-                rb.velocity = new Vector3(0, 3f, 0);
+                rb.velocity = new Vector3(moveX, moveY, 0);
                 check = true;
                 time = 0;
             }

@@ -8,6 +8,8 @@ public class Rez_wall : MonoBehaviour
     public int num = 1;
     private int check;
     private Vector3 pos;
+    public float moveX;
+    public float moveY;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,7 @@ public class Rez_wall : MonoBehaviour
         {
             if (Switch.Move_select == num)
             {
-                this.gameObject.transform.Translate(0,1,Time.deltaTime);
+                this.gameObject.transform.Translate(moveX,moveY,Time.deltaTime);
             }
         }
     }
