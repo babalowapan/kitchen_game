@@ -58,7 +58,6 @@ public class PlayerMove : MonoBehaviour
             anim.SetTrigger("down");
             FadeManager.FadeOut(2);
             Invoke("stop", 0.5f);
-            this.gameObject.SetActive(false);
         }
 
         if (Time.timeScale == 1)
