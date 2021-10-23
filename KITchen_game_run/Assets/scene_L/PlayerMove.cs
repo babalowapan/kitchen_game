@@ -29,70 +29,101 @@ public class PlayerMove : MonoBehaviour
     private float move;
     private float reset_time;
     public float time;
-    float m_time;
-    float minute;
+    public GameObject other;
+    Vector3 pos;
+    private float Y = -45;
+    Vector3 pos_other;
+    private bool swap = true;
 
     // Start is called before the first frame update
     void Start()
     {
         gc_L = GetComponent<GameoverCheck>();
         gc_R = GetComponent<GameoverCheck_R>();
-        st = GetComponent<StopFloor>();
+        st = GetComponentInChildren<StopFloor>();
         characterController = GetComponent<CharacterController>();
         rbody2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("run", false);
-        minute = 0;
-        m_time = 0;
+        pos = this.gameObject.transform.position;
+        pos_other = other.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gc_L.GameOver()||gc_R.GameOver())
-        {
-            anim.SetTrigger("down");
-        }
-        else
+        if (pos.y <= Y || pos_other.y <= Y)
         {
 
+            anim.SetTrigger("down");
+            FadeManager.FadeOut(2);
+            Invoke("stop", 0.5f);
+        }
+
+        if (Time.timeScale == 1)
+        {
+            pos = this.gameObject.transform.position;
+            pos_other = other.transform.position;
             if (ground.IsGround())//地面に接地しているとき
-            {                isGround = true;
-                if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
+            {
+                isGround = true;
+                if (swap)
                 {
-                    anim.SetBool("run",false);
-                    anim.SetTrigger("jumpUp");
-                    rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
-                    reset_time = 0;
+                    if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
+                    {
+                        //anim.SetTrigger("jumpUp");
+                        rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        reset_time = 0;
+                    }
+                    else
+                    {
+                        anim.SetBool("run", true);
+                    }
                 }
                 else
                 {
-                    anim.SetBool("run", true);
-                    anim.SetBool("jumpUp", false);
+                    if (Input.GetKeyDown(KeyCode.RightShift))//ジャンプのキー入力
+                    {
+                        //anim.SetTrigger("jumpUp");
+                        rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        reset_time = 0;
+                    }
+                    else
+                    {
+                        anim.SetBool("run", true);
+                    }
                 }
             }
-            else if (rbody2D.velocity.y < 0)//地面に接地してない時
+            else if (ground.IsGround() == false && rbody2D.velocity.y < 0)//地面に接地してない時
             {
-                anim.SetBool("run", false);
-                anim.SetTrigger("fall");
+                //anim.SetTrigger("fall");
                 isGround = false;
             }
-            else if (st.IsFloor())
-            {
-                rbody2D.AddForce(Vector3.up * 0);
-            }
-            
+
         }
-
-    }
-
-    void FixedUpdate()
-    {
         reset_time += Time.deltaTime;
         timer += Time.deltaTime;
         move = timer * sp;
-        rbody2D.velocity = new Vector3(5, rbody2D.velocity.y, 0);
+        rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
+    }
+        //Debug.Log(rbody2D.velocity.y);
+
+    void stop()
+    {
+        Time.timeScale = 0;
     }
 
+    public void SwapKey()
+    {
+        if (swap)
+        {
+            swap = false;
+        }
+        else
+        {
+            swap = true;
+        }
+        Debug.Log(swap);
+    }
     
 }

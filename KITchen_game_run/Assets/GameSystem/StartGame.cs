@@ -17,7 +17,8 @@ public class StartGame : MonoBehaviour
 
     public void Start_Game()
     {
-            SceneManager.LoadScene("game_R_scene");
         
+        FadeManager.FadeOut(1);
+
     }
 }

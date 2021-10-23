@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -15,12 +16,16 @@ public class Score : MonoBehaviour
 
 	void Start()
 	{
+		FadeManager.FadeIn();
+		ScoreText = GetComponent<Text>();
 		time = Timer.score_t;
-		T_time = Timer.time;
+		T_time = time.ToString("00");
 		Debug.Log(T_time);
-		ScoreText.text = T_time;
 	}
 
-	
+    void Update()
+    {
+		ScoreText.text = T_time;
+	}
 
 }

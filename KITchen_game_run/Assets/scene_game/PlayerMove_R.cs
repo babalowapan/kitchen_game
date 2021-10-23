@@ -25,32 +25,44 @@ public class PlayerMove_R : MonoBehaviour
     private Rigidbody2D rbody2D = null;
     private float move;
     public static float time;
+    private float Y = -45;
+    public GameObject other;
+    Vector3 pos;
+    Vector3 pos_other;
+    private bool swap = true;
 
     // Start is called before the first frame update
     void Start()
     {
+        pos = this.gameObject.transform.position;
         gc_L = GetComponent<GameoverCheck>();
         gc_R = GetComponent<GameoverCheck_R>();
         rbody2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("run", false);
+        pos_other = other.transform.position;
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (gc_L.GameOver() || gc_R.GameOver())
+        if (pos.y <= Y||pos_other.y <= Y)
         {
             anim.SetTrigger("down");
             time = timer;
+            this.gameObject.SetActive(false);
+            Time.timeScale = 0;
+            //Application.LoadLevel("game_R_scene");
         }
-        else
+        else if(Time.timeScale == 1)
         {
 
             if (ground.IsGround())//地面に接地しているとき
             {
                 isGround = true;
+                if (swap) {
                 if (Input.GetKeyDown(KeyCode.RightShift))//ジャンプのキー入力
                 {
                     anim.SetBool("run", false);
@@ -62,6 +74,21 @@ public class PlayerMove_R : MonoBehaviour
                     anim.SetBool("run", true);
                     anim.SetBool("jumpUp", false);
                 }
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
+                    {
+                        anim.SetBool("run", false);
+                        anim.SetTrigger("jumpUp");
+                        rbody2D.AddForce(Vector2.up * Jumppower, ForceMode2D.Impulse);
+                    }
+                    else
+                    {
+                        anim.SetBool("run", true);
+                        anim.SetBool("jumpUp", false);
+                    }
+                }
             }
             else if (rbody2D.velocity.y < 0)//地面に接地してない時
             {
@@ -72,8 +99,20 @@ public class PlayerMove_R : MonoBehaviour
 
             timer += Time.deltaTime;
             move = timer * sp;
-            rbody2D.velocity = new Vector3(-5, rbody2D.velocity.y, 0);
+            rbody2D.velocity = new Vector3(-6, rbody2D.velocity.y, 0);
 
+        }
+    }
+
+    public void SwapKey()
+    {
+        if (swap)
+        {
+            swap = false;
+        }
+        else
+        {
+            swap = true;
         }
     }
 
