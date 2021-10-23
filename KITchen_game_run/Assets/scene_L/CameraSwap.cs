@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class CameraSwap : MonoBehaviour
 {
+    private Switch Switch;
     public GameObject playerObj;
     public Camera cam;
     private Matrix4x4 mat;
     Vector3 scale;
-    float timer;
     private bool swap;
+    public int move_num = 2;
 
     // Start is called before the first frame update
     void Start()
     {
+        this.Switch = FindObjectOfType<Switch>();
         scale = new Vector3(-1, 1, 1);
         swap = false;
     }
@@ -21,34 +23,37 @@ public class CameraSwap : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        timer += Time.deltaTime;
-        //if (timer >= 3)
-        //{
-            if(swap)
+        if (Switch.ispush)
+        {
+            if (Switch.Move_select == move_num)
+            {
+                if (swap)
+                {
+                    swap = false;
+                }
+                else
+                {
+                    swap = true;
+                }
+            }
+            
+        }
+
+        if (swap)
             {
                 cam.ResetWorldToCameraMatrix();
                 cam.ResetProjectionMatrix();
                 cam.projectionMatrix = cam.projectionMatrix * Matrix4x4.Scale(scale);
-                timer = 0;
                 cam.rect = new Rect(0.5f, 0, 0.5f, 1.0f);
             }
             else
             {
                 cam.ResetWorldToCameraMatrix();
                 cam.ResetProjectionMatrix();
-                timer = 0;
                 cam.rect = new Rect(0, 0, 0.5f, 1.0f);
             }
 
-            /*if (swap)
-            {
-                swap = false;
-            }
-            else
-            {
-                swap = true;
-            }*/
-        //}
+            
     }
 
     void OnPreRender()
