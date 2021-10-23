@@ -25,7 +25,6 @@ public class StageCreate : MonoBehaviour
         CreateStage(0.0f, setY, 0.0f);
         CreateStage(25.0f, setY, 0.0f);
         CreateStage(50.0f, setY, 0.0f);
-        //CreateRock(30f, -3f, 0.0f);
     }
 
     // Update is called once per frame

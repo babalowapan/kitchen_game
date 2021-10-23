@@ -73,7 +73,7 @@ public class PlayerMove : MonoBehaviour
                 isGround = true;
                 if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
                 {
-                    anim.SetTrigger("jumpUp");
+                    //anim.SetTrigger("jumpUp");
                     rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                     reset_time = 0;
                 }
@@ -84,7 +84,7 @@ public class PlayerMove : MonoBehaviour
             }
             else if (ground.IsGround()==false&&rbody2D.velocity.y < 0)//地面に接地してない時
             {
-                anim.SetTrigger("fall");
+                //anim.SetTrigger("fall");
                 isGround = false;
             }
             

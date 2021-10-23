@@ -15,7 +15,7 @@ public class CameraSwap_R : MonoBehaviour
     void Start()
     {
         scale = new Vector3(-1, 1, 1);
-        swap = true;
+        swap = false;
     }
 
     // Update is called once per frame

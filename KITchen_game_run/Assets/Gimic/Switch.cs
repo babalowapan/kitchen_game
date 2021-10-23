@@ -29,7 +29,7 @@ public class Switch : MonoBehaviour
 	{
 		if(IsPush == true)
         {
-			Debug.Log("Foooo");
+
         }
 	}
 	void OnTriggerEnter2D(Collider2D collision)
