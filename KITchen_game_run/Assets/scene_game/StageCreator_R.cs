@@ -16,8 +16,8 @@ public class StageCreator_R : MonoBehaviour
     void Start()
     {
         setY = -10f;
-        CreateStage(0.0f, setY, 0.0f);
         CreateStage(-25.0f, setY, 0.0f);
+        CreateStage(-75.0f, setY, 0.0f);
         CreateStage(-50.0f, setY, 0.0f);
     }
 

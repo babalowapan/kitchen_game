@@ -32,7 +32,7 @@ public class Switch : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		
+
 	}
 	void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -42,9 +42,22 @@ public class Switch : MonoBehaviour
 			{
 				IsPush = true;
 				check = false;
-				col.enabled = false;
-				Debug.Log(check);
+				Debug.Log(IsPush);
+				Debug.Log(ispush);
 			}
 		}
+        else
+        {
+			IsPush = false;
+		}
 	}
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+		if (collision.tag == groundTag)
+		{
+			check = true;
+			IsPush = false;
+		}
+    }
 }

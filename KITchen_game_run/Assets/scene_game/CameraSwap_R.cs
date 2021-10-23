@@ -26,17 +26,8 @@ public class CameraSwap_R : MonoBehaviour
     {
         if (Switch.ispush)
         {
-            if (Switch.Move_select == move_num)
-            {
-                if (swap)
-                {
-                    swap = false;
-                }
-                else
-                {
-                    swap = true;
-                }
-            }
+            Debug.Log("iiiii");
+            Swap();
         }
 
         if (swap)
@@ -45,13 +36,31 @@ public class CameraSwap_R : MonoBehaviour
                 cam.ResetProjectionMatrix();
                 cam.projectionMatrix = cam.projectionMatrix * Matrix4x4.Scale(scale);
                 cam.rect = new Rect(0, 0, 0.5f, 1.0f);
-            }
+            
+        }
             else
             {
                 cam.ResetWorldToCameraMatrix();
                 cam.ResetProjectionMatrix();
                 cam.rect = new Rect(0.5f, 0, 0.5f, 1.0f);
+            
+        }
+    }
+
+
+    void Swap()
+    {
+        if (Switch.Move_select == move_num)
+        {
+            if (swap)
+            {
+                swap = false;
             }
+            else
+            {
+                swap = true;
+            }
+        }
         Switch.ispush = false;
     }
 

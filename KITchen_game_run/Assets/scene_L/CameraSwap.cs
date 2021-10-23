@@ -25,6 +25,7 @@ public class CameraSwap : MonoBehaviour
     {
         if (Switch.ispush)
         {
+            Debug.Log("ttttt");
             if (Switch.Move_select == move_num)
             {
                 if (swap)
