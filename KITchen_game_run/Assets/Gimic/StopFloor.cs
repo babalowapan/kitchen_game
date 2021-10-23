@@ -20,14 +20,12 @@ public class StopFloor : MonoBehaviour
         if (isStopEnter || isStopStay)
         {
             isStop = true;
-            Debug.Log("HHHHHH");
         }
         else if (isStopExit)
         {
             isStop = false;
         }
 
-        Debug.Log("!!!!");
         isStopEnter = false;
         isStopStay = false;
         isStopExit = false;

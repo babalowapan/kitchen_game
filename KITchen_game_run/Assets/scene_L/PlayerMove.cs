@@ -41,7 +41,7 @@ public class PlayerMove : MonoBehaviour
     {
         gc_L = GetComponent<GameoverCheck>();
         gc_R = GetComponent<GameoverCheck_R>();
-        st = GetComponent<StopFloor>();
+        st = GetComponentInChildren<StopFloor>();
         characterController = GetComponent<CharacterController>();
         rbody2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -73,7 +73,6 @@ public class PlayerMove : MonoBehaviour
                 isGround = true;
                 if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
                 {
-                    anim.SetBool("run",false);
                     anim.SetTrigger("jumpUp");
                     rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                     reset_time = 0;
@@ -81,31 +80,29 @@ public class PlayerMove : MonoBehaviour
                 else
                 {
                     anim.SetBool("run", true);
-                    anim.SetBool("jumpUp", false);
                 }
             }
-            else if (rbody2D.velocity.y < 0)//地面に接地してない時
+            else if (ground.IsGround()==false&&rbody2D.velocity.y < 0)//地面に接地してない時
             {
-                anim.SetBool("run", false);
                 anim.SetTrigger("fall");
                 isGround = false;
             }
             
         }
 
-        /*if (st.IsFloor())
+        if (st.IsFloor())
         {
 
             rbody2D.velocity = new Vector3(0, rbody2D.velocity.y, 0);
         }
         else
-        {*/
+        {
             reset_time += Time.deltaTime;
             timer += Time.deltaTime;
             move = timer * sp;
             rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
-        //}
-
+        }
+        //Debug.Log(rbody2D.velocity.y);
     }
 
     void stop()

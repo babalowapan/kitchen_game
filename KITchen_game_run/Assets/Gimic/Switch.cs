@@ -5,34 +5,38 @@ using UnityEngine;
 public class Switch : MonoBehaviour
 {
 	// Start is called before the first frame update
-	public GameObject[] OnObj;
-	public GameObject[] OffObj;
+	private string groundTag = "under_c";
+	private int move_select;	//スイッチと連動させる壁を指定したい
+	public int Move_select
+    {
+        get { return move_select; }
+		set { move_select = value; }
+    }
+	private bool IsPush = false;
+	public bool ispush
+    {
+		get { return IsPush; }
+    }
 
 	// Use this for initialization
 	void Start()
 	{
-
+		move_select = 1;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		if(IsPush == true)
+        {
+			Debug.Log("Foooo");
+        }
 	}
-	void OnTriggerEnter2D(Collider2D col)
+	void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (col.gameObject.name == "Player")
+		if (collision.tag == groundTag)
 		{
-			foreach (GameObject On in OnObj)
-			{
-				On.GetComponent<SpriteRenderer>().enabled = true;
-				On.GetComponent<Collider2D>().enabled = true;
-			}
-			foreach (GameObject Off in OffObj)
-			{
-				Off.GetComponent<SpriteRenderer>().enabled = false;
-				Off.GetComponent<Collider2D>().enabled = false;
-			}
-			Destroy(this.gameObject);
+			IsPush = true;
 		}
 	}
 }

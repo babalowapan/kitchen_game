@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
 
 	void Start()
 	{
+		score_t = 0;
 		minute = 0;
 		seconds = 0f;
 		oldSeconds = 0f;

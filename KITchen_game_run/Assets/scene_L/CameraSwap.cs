@@ -22,8 +22,8 @@ public class CameraSwap : MonoBehaviour
     void FixedUpdate()
     {
         timer += Time.deltaTime;
-        if (timer >= 3)
-        {
+        //if (timer >= 3)
+        //{
             if(swap)
             {
                 cam.ResetWorldToCameraMatrix();
@@ -40,15 +40,15 @@ public class CameraSwap : MonoBehaviour
                 cam.rect = new Rect(0, 0, 0.5f, 1.0f);
             }
 
-            if (swap)
+            /*if (swap)
             {
                 swap = false;
             }
             else
             {
                 swap = true;
-            }
-        }
+            }*/
+        //}
     }
 
     void OnPreRender()
