@@ -29,6 +29,7 @@ public class PlayerMove_R : MonoBehaviour
     public GameObject other;
     Vector3 pos;
     Vector3 pos_other;
+    private bool swap = true;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +62,7 @@ public class PlayerMove_R : MonoBehaviour
             if (ground.IsGround())//地面に接地しているとき
             {
                 isGround = true;
+                if (swap) {
                 if (Input.GetKeyDown(KeyCode.RightShift))//ジャンプのキー入力
                 {
                     anim.SetBool("run", false);
@@ -71,6 +73,21 @@ public class PlayerMove_R : MonoBehaviour
                 {
                     anim.SetBool("run", true);
                     anim.SetBool("jumpUp", false);
+                }
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
+                    {
+                        anim.SetBool("run", false);
+                        anim.SetTrigger("jumpUp");
+                        rbody2D.AddForce(Vector2.up * Jumppower, ForceMode2D.Impulse);
+                    }
+                    else
+                    {
+                        anim.SetBool("run", true);
+                        anim.SetBool("jumpUp", false);
+                    }
                 }
             }
             else if (rbody2D.velocity.y < 0)//地面に接地してない時
@@ -84,6 +101,18 @@ public class PlayerMove_R : MonoBehaviour
             move = timer * sp;
             rbody2D.velocity = new Vector3(-6, rbody2D.velocity.y, 0);
 
+        }
+    }
+
+    public void SwapKey()
+    {
+        if (swap)
+        {
+            swap = false;
+        }
+        else
+        {
+            swap = true;
         }
     }
 
