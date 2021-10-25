@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -945656485354506062}
   m_Layer: 0
   m_Name: switchMove
-  m_TagString: Untagged
+  m_TagString: stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 1
   moveX: 0
-  moveY: 0
+  moveY: 1
 --- !u!50 &4247507859740635899
 Rigidbody2D:
   serializedVersion: 4

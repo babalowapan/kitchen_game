@@ -17,7 +17,6 @@ public class PlayerMove : MonoBehaviour
     public StopFloor st;
     public float gravity;
     float sp = 0.05f;//speed
-    float timer  = 0;
     //float flap = 1000f;
     public float PlayerX = 0;
     //private float jumpPos = 0.0f;
@@ -26,8 +25,6 @@ public class PlayerMove : MonoBehaviour
     private Animator anim;
     private bool isGround = false;
     private Rigidbody2D rbody2D = null;
-    private float move;
-    private float reset_time;
     public float time;
     public GameObject other;
     Vector3 pos;
@@ -40,8 +37,6 @@ public class PlayerMove : MonoBehaviour
     {
         gc_L = GetComponent<GameoverCheck>();
         gc_R = GetComponent<GameoverCheck_R>();
-        st = GetComponentInChildren<StopFloor>();
-        characterController = GetComponent<CharacterController>();
         rbody2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("run", false);
@@ -56,11 +51,9 @@ public class PlayerMove : MonoBehaviour
         {
 
             anim.SetTrigger("down");
-            FadeManager.FadeOut(3);
-            Invoke("stop", 0.5f);
         }
 
-        if (Time.timeScale == 1)
+        else if (Time.timeScale == 1)
         {
             pos = this.gameObject.transform.position;
             pos_other = other.transform.position;
@@ -73,7 +66,6 @@ public class PlayerMove : MonoBehaviour
                     {
                         //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
-                        reset_time = 0;
                     }
                     else
                     {
@@ -86,7 +78,6 @@ public class PlayerMove : MonoBehaviour
                     {
                         //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
-                        reset_time = 0;
                     }
                     else
                     {
@@ -94,24 +85,14 @@ public class PlayerMove : MonoBehaviour
                     }
                 }
             }
-            else if (ground.IsGround() == false && rbody2D.velocity.y < 0)//地面に接地してない時
-            {
-                //anim.SetTrigger("fall");
-                isGround = false;
-            }
+            
 
+            rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
         }
-        reset_time += Time.deltaTime;
-        timer += Time.deltaTime;
-        move = timer * sp;
-        rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
+        
     }
         //Debug.Log(rbody2D.velocity.y);
 
-    void stop()
-    {
-        Time.timeScale = 0;
-    }
 
     public void SwapKey()
     {
@@ -123,7 +104,6 @@ public class PlayerMove : MonoBehaviour
         {
             swap = true;
         }
-        Debug.Log(swap);
     }
     
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rez_wall : MonoBehaviour
 {
     private Switch Switch;
-    public int num = 1;
+    public int num;
     private int check;
     private Vector3 pos;
     public float moveX;
@@ -14,6 +14,7 @@ public class Rez_wall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(num);
         this.Switch = FindObjectOfType<Switch>();
         check = Switch.Move_select;
         pos = this.gameObject.transform.position;
