@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class EndFloor : MonoBehaviour
+public class Pause_remove : MonoBehaviour
 {
+    public GameObject Pause_RestartPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +15,5 @@ public class EndFloor : MonoBehaviour
     void Update()
     {
         
-    }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "under_c")
-        {
-            FadeManager.FadeOut(3);
-        }
     }
 }

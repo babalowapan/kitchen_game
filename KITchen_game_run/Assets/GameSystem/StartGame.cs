@@ -18,7 +18,7 @@ public class StartGame : MonoBehaviour
     public void Start_Game()
     {
         
-        FadeManager.FadeOut(1);
+        FadeManager.FadeOut(2);
 
     }
 }

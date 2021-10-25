@@ -2,25 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class EndFloor : MonoBehaviour
+public class LookExam : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.GetComponent<Button>().onClick.AddListener(lookExam);
     }
 
     // Update is called once per frame
-    void Update()
+    void lookExam()
     {
-        
-    }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "under_c")
-        {
-            FadeManager.FadeOut(3);
-        }
+        FadeManager.FadeOut(1);
     }
 }

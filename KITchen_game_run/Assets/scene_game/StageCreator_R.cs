@@ -19,6 +19,7 @@ public class StageCreator_R : MonoBehaviour
         CreateStage(-25.0f, setY, 0.0f);
         CreateStage(-75.0f, setY, 0.0f);
         CreateStage(-50.0f, setY, 0.0f);
+        CreateStage(-100.0f, setY, 0.0f);
     }
 
     // Update is called once per frame
