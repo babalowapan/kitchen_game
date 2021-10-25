@@ -64,7 +64,6 @@ public class PlayerMove : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
                     {
-                        //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                     }
                     else
@@ -76,7 +75,6 @@ public class PlayerMove : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.RightShift))//ジャンプのキー入力
                     {
-                        //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                     }
                     else
@@ -91,7 +89,7 @@ public class PlayerMove : MonoBehaviour
         }
         
     }
-        //Debug.Log(rbody2D.velocity.y);
+
 
 
     public void SwapKey()

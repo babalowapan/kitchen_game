@@ -77,8 +77,6 @@ public class PlayerMove_R : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
                     {
-                        //anim.SetBool("run", false);
-                        //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector2.up * Jumppower, ForceMode2D.Impulse);
                     }
                     else
@@ -89,7 +87,6 @@ public class PlayerMove_R : MonoBehaviour
             }
 
             timer += Time.deltaTime;
-            move = timer * sp;
             rbody2D.velocity = new Vector3(-6, rbody2D.velocity.y, 0);
 
         }
