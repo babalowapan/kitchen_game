@@ -56,7 +56,7 @@ public class PlayerMove : MonoBehaviour
         {
 
             anim.SetTrigger("down");
-            FadeManager.FadeOut(2);
+            FadeManager.FadeOut(3);
             Invoke("stop", 0.5f);
         }
 

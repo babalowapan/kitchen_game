@@ -15,6 +15,6 @@ public class Retire : MonoBehaviour
     // Update is called once per frame
     void retire()
     {
-        FadeManager.FadeOut(2);
+        FadeManager.FadeOut(3);
     }
 }
