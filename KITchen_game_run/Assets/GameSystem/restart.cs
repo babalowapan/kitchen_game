@@ -4,21 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartGame : MonoBehaviour
+public class restart : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    // Update is called once per frame
-
     void Start()
     {
-        gameObject.GetComponent<Button>().onClick.AddListener(Start_Game);
+        gameObject.GetComponent<Button>().onClick.AddListener(start);
     }
 
-    public void Start_Game()
+    // Update is called once per frame
+    void start()
     {
-        
         FadeManager.FadeOut(1);
-
     }
 }

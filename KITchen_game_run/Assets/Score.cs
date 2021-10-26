@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
 		FadeManager.FadeIn();
 		ScoreText = GetComponent<Text>();
 		time = Timer.score_t;
-		T_time = time.ToString("00");
+		T_time = "Score:" + time.ToString("00");
 		Debug.Log(T_time);
 	}
 

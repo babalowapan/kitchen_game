@@ -10,7 +10,7 @@ public class MoveStage : MonoBehaviour
     private Rigidbody2D rbody2D = null;
     private bool up_down = true;
     private Vector3 defaultPos;
-    private Vector3 setPos;
+    public Vector3 setPos;
 
     void CreateMoveStage(float x, float y, float z)
     {

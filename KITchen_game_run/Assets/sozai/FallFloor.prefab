@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8620346216590392052}
   m_Layer: 0
   m_Name: FallFloor
-  m_TagString: Untagged
+  m_TagString: stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +145,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c00e8de46c44b1dbb51b47f127da2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 0
+  fallY: 0
