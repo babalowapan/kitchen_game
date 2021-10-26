@@ -52,9 +52,12 @@ public class PlayerMove_R : MonoBehaviour
         {
             anim.SetTrigger("down");
             time = timer;
+<<<<<<< Updated upstream
             Debug.Log("tttt");
             FadeManager.FadeOut(2);
             this.gameObject.SetActive(false);
+=======
+>>>>>>> Stashed changes
             Time.timeScale = 0;
         }
         else if(Time.timeScale == 1)
@@ -64,7 +67,7 @@ public class PlayerMove_R : MonoBehaviour
             {
                 isGround = true;
                 if (swap) {
-                if (Input.GetKeyDown(KeyCode.RightShift))//ジャンプのキー入力
+                if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                 {
                     rbody2D.AddForce(Vector2.up * Jumppower, ForceMode2D.Impulse);
                 }
@@ -75,7 +78,7 @@ public class PlayerMove_R : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
+                    if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
                     {
                         rbody2D.AddForce(Vector2.up * Jumppower, ForceMode2D.Impulse);
                     }

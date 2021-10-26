@@ -51,10 +51,18 @@ public class PlayerMove : MonoBehaviour
         {
 
             anim.SetTrigger("down");
+<<<<<<< Updated upstream
+=======
+            Invoke("stop", 0.5f);
+>>>>>>> Stashed changes
         }
 
         else if (Time.timeScale == 1)
         {
+            reset_time += Time.deltaTime;
+            timer += Time.deltaTime;
+            move = timer * sp;
+            rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
             pos = this.gameObject.transform.position;
             pos_other = other.transform.position;
             if (ground.IsGround())//地面に接地しているとき
@@ -62,7 +70,7 @@ public class PlayerMove : MonoBehaviour
                 isGround = true;
                 if (swap)
                 {
-                    if (Input.GetKeyDown(KeyCode.LeftShift))//ジャンプのキー入力
+                    if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
                     {
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                     }
@@ -73,7 +81,7 @@ public class PlayerMove : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.RightShift))//ジャンプのキー入力
+                    if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                     {
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                     }

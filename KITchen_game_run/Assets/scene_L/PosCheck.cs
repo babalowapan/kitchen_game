@@ -21,7 +21,7 @@ public class PosCheck : MonoBehaviour
     {
         if (player.position.y <= positionY)
         {
-            FadeManager.FadeOut(2);
+            FadeManager.FadeOut(3);
         }
     }
 }
