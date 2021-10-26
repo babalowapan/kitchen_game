@@ -20,7 +20,7 @@ public class EndFloor : MonoBehaviour
     {
         if (collision.tag == "under_c")
         {
-            FadeManager.FadeOut(3);
+            FadeManager.FadeOut(2);
         }
     }
 }
