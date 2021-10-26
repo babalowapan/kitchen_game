@@ -15,6 +15,6 @@ public class LookExam : MonoBehaviour
     // Update is called once per frame
     void lookExam()
     {
-        FadeManager.FadeOut(1);
+        FadeManager.FadeOut(3);
     }
 }
