@@ -51,17 +51,11 @@ public class PlayerMove : MonoBehaviour
         {
 
             anim.SetTrigger("down");
-<<<<<<< Updated upstream
-=======
-            Invoke("stop", 0.5f);
->>>>>>> Stashed changes
+
         }
 
         else if (Time.timeScale == 1)
         {
-            reset_time += Time.deltaTime;
-            timer += Time.deltaTime;
-            move = timer * sp;
             rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
             pos = this.gameObject.transform.position;
             pos_other = other.transform.position;

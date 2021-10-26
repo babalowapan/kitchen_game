@@ -52,13 +52,7 @@ public class PlayerMove_R : MonoBehaviour
         {
             anim.SetTrigger("down");
             time = timer;
-<<<<<<< Updated upstream
-            Debug.Log("tttt");
             FadeManager.FadeOut(2);
-            this.gameObject.SetActive(false);
-=======
->>>>>>> Stashed changes
-            Time.timeScale = 0;
         }
         else if(Time.timeScale == 1)
         {
