@@ -30,8 +30,13 @@ public class Rez_wall_v2 : MonoBehaviour
         {
             if (Switch.Move_select == num)
             {
-                this.gameObject.transform.position = Vector3.MoveTowards(transform.position,target, Time.deltaTime*sp);
+                Move();
             }
         }
+    }
+
+    void Move()
+    {
+        this.gameObject.transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * sp);
     }
 }

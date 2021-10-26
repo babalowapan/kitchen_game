@@ -73,7 +73,7 @@ public class StageCreator_R : MonoBehaviour
         CreateStage(-75.0f, setY, 0.0f);
         CreateStage(-50.0f, setY, 0.0f);
         CreateStage(-100.0f, setY, 0.0f);
-        CreateSwitch(-60.0f, setY, 0.0f, 5);
+        //CreateSwitch(-60.0f, setY, 0.0f, 5);
         CreateSwitchMove(-70.0f, setY, 0.0f, 5, 0, 5);
         CreateSwitchMove(-80.0f, setY, 0.0f, 1, 0, 1);
     }

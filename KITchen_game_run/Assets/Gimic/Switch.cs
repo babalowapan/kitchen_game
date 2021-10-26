@@ -59,8 +59,6 @@ public class Switch : MonoBehaviour
 					s_Rk.GetComponent<PlayerMove_R>().SwapKey();
 				}
 				check = false;
-				Debug.Log(IsPush);
-				Debug.Log(ispush);
 			}
 			IsPush = true;
 		}
