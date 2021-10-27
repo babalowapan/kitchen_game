@@ -2166,3 +2166,80 @@ Registered in 0.014961 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\iniad\Documents\GitHub\kitchen_game2\KITchen_game_run\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\iniad\Documents\GitHub\kitchen_game2\KITchen_game_run\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.38 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.764 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5769ms)
+		BeginReloadAssembly (1404ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (229ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (660ms)
+		EndReloadAssembly (4124ms)
+			LoadAssemblies (607ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1276ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (180ms)
+			SetupLoadedEditorAssemblies (1724ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (295ms)
+				ProcessInitializeOnLoadAttributes (1339ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (56ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.8 MB.
+System memory in use after: 148.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4342.
+Total: 18.062800 ms (FindLiveObjects: 1.058300 ms CreateObjectMapping: 0.371000 ms MarkObjects: 16.267100 ms  DeleteObjects: 0.362800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 99306.605379 seconds.
+  path: Assets/sozai/Brock.prefab
+  artifactKey: Guid(438dd6ebaae4b4248a18e3866efd6a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sozai/Brock.prefab using Guid(438dd6ebaae4b4248a18e3866efd6a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf199f2a6ac851eae317f8436296003') in 0.926153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000876 seconds.
+  path: Assets/sozai/Ground_Medium.prefab
+  artifactKey: Guid(6adc03f90a74b436ba68c6bf04defa69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sozai/Ground_Medium.prefab using Guid(6adc03f90a74b436ba68c6bf04defa69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ff45b21a221abd597aac6ea946daff') in 0.793414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001330 seconds.
+  path: Assets/sozai/Switch.prefab
+  artifactKey: Guid(42a3a5e0d8d52436db56af02f221573e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sozai/Switch.prefab using Guid(42a3a5e0d8d52436db56af02f221573e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc8008ea399a7a80e0ca914a2bcea91') in 0.044750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001299 seconds.
+  path: Assets/sozai/move_ground.prefab
+  artifactKey: Guid(ceb752cde75e44f6cb2533143a75f66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sozai/move_ground.prefab using Guid(ceb752cde75e44f6cb2533143a75f66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef908ba8a2f8e4f525047ed8780133fa') in 0.215183 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
