@@ -61,11 +61,12 @@ public class PlayerMove_R : MonoBehaviour
 
             if (ground.IsGround())//地面に接地しているとき
             {
+                rbody2D.velocity = new Vector3(-8, rbody2D.velocity.y, 0);
                 isGround = true;
                 if (swap) {
                 if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                 {
-                    rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 200, ForceMode2D.Impulse);
+                    rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 30, ForceMode2D.Impulse);
                 }
                 else
                 {
@@ -78,7 +79,7 @@ public class PlayerMove_R : MonoBehaviour
                     {
                         //anim.SetBool("run", false);
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 200, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 30, ForceMode2D.Impulse);
                     }
                     else
                     {
@@ -89,7 +90,6 @@ public class PlayerMove_R : MonoBehaviour
 
             timer += Time.deltaTime;
             move = timer * sp;
-            rbody2D.velocity = new Vector3(-8, rbody2D.velocity.y, 0);
 
         }
     }
