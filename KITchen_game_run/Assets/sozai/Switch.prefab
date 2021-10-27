@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2490742750611328813}
   - component: {fileID: 950099365201792534}
   - component: {fileID: 8981481829833621813}
+  - component: {fileID: -8514638808331022436}
   m_Layer: 0
   m_Name: Switch
   m_TagString: stage
@@ -71,3 +72,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_select: 0
+--- !u!114 &-8514638808331022436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552262611975027431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f879ea97d4204436ca00ccade31789f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

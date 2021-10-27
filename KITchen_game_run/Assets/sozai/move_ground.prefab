@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5961990279720770000}
   - component: {fileID: 5214975916554279821}
   - component: {fileID: 1245775803003380424}
+  - component: {fileID: 2714526786687065733}
   m_Layer: 0
   m_Name: move_ground
   m_TagString: stage
@@ -148,3 +149,15 @@ MonoBehaviour:
   moveX: 0
   moveY: 0
   timer: 0
+--- !u!114 &2714526786687065733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840379009195700694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f879ea97d4204436ca00ccade31789f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

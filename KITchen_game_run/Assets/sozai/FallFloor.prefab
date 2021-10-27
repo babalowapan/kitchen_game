@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -1612321895004955999}
   - component: {fileID: 3031358913604892170}
   - component: {fileID: 8620346216590392052}
+  - component: {fileID: 5342055358291807100}
   m_Layer: 0
   m_Name: FallFloor
   m_TagString: stage
@@ -147,3 +148,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   fallY: 0
+--- !u!114 &5342055358291807100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388412247478255043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f879ea97d4204436ca00ccade31789f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

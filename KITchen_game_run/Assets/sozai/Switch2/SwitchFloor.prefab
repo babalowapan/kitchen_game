@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 626785630366549078}
   - component: {fileID: 4382176847849535641}
   - component: {fileID: 3767599860559652402}
+  - component: {fileID: -8438015532354230618}
   m_Layer: 0
   m_Name: SwitchFloor
   m_TagString: stage
@@ -146,3 +147,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_select: 5
+--- !u!114 &-8438015532354230618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2470281953886947565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f879ea97d4204436ca00ccade31789f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

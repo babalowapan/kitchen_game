@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4903651346198300632}
   - component: {fileID: -836642758840768799}
   - component: {fileID: 7579505057795858795}
+  - component: {fileID: 1017686043616937171}
   m_Layer: 0
   m_Name: Brock
   m_TagString: Untagged
@@ -144,3 +145,15 @@ PolygonCollider2D:
       - {x: 0.525, y: -0.64}
       - {x: 0.585, y: -0.53999996}
       - {x: 0.705, y: -0.32999998}
+--- !u!114 &1017686043616937171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5116060078357879948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f879ea97d4204436ca00ccade31789f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
