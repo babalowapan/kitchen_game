@@ -317,7 +317,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 40
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1231,12 +1231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   ground: {fileID: 628074095}
-  gc_L: {fileID: 0}
-  gc_R: {fileID: 0}
   st: {fileID: 0}
   gravity: 0
   PlayerX: 0
-  Jumppower: 70
   time: 0
   other: {fileID: 1650464702}
 --- !u!50 &1401698038
@@ -1457,7 +1454,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 40
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1691,11 +1688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   ground: {fileID: 937903075}
-  gc_L: {fileID: 0}
-  gc_R: {fileID: 0}
   gravity: 0
   PlayerX: 0
-  Jumppower: 30
   other: {fileID: 1401698036}
 --- !u!212 &1650464705
 SpriteRenderer:
