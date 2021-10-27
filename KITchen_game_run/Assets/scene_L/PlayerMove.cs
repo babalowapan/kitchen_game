@@ -59,7 +59,7 @@ public class PlayerMove : MonoBehaviour
             pos_other = other.transform.position;
             if (ground.IsGround())//地面に接地しているとき
             {
-                rbody2D.velocity = new Vector3(8, rbody2D.velocity.y, 0);
+                rbody2D.velocity = new Vector3(9, rbody2D.velocity.y, 0);
                 isGround = true;
                 if (swap)
                 {
