@@ -27,7 +27,7 @@ public class FollowCamera_R : MonoBehaviour
     void LateUpdate()
     {
         Vector3 playerPos = playerObj.transform.position;
-        transform.position = new Vector3(playerPos.x, 0, -10);
+        transform.position = new Vector3(playerPos.x, -5, -10);
     }
 
 

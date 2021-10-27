@@ -12,8 +12,6 @@ public class PlayerMove : MonoBehaviour
     //インスペクターで設定する
     public float speed;
     public StageCheck ground; //new
-    public GameoverCheck gc_L;
-    public GameoverCheck_R gc_R;
     public StopFloor st;
     public float gravity;
     float sp = 0.05f;//speed
@@ -21,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     public float PlayerX = 0;
     //private float jumpPos = 0.0f;
     //float jumpHeight;
-    public float Jumppower;
+    float Jumppower = 95;
     private Animator anim;
     private bool isGround = false;
     private Rigidbody2D rbody2D = null;
@@ -35,8 +33,6 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gc_L = GetComponent<GameoverCheck>();
-        gc_R = GetComponent<GameoverCheck_R>();
         rbody2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("run", false);
@@ -77,7 +73,7 @@ public class PlayerMove : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 10, ForceMode2D.Impulse);
                     }
                     else
                     {
@@ -87,7 +83,7 @@ public class PlayerMove : MonoBehaviour
             }
             
 
-            rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
+            rbody2D.velocity = new Vector3(7, rbody2D.velocity.y, 0);
         }
         
     }
