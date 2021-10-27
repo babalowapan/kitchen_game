@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class StartGame : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public int scene = 1;
     // Update is called once per frame
 
     void Start()
@@ -18,7 +18,7 @@ public class StartGame : MonoBehaviour
     public void Start_Game()
     {
         
-        FadeManager.FadeOut(1);
+        FadeManager.FadeOut(scene);
 
     }
 }

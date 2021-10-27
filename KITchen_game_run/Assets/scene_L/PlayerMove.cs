@@ -12,8 +12,6 @@ public class PlayerMove : MonoBehaviour
     //インスペクターで設定する
     public float speed;
     public StageCheck ground; //new
-    public GameoverCheck gc_L;
-    public GameoverCheck_R gc_R;
     public StopFloor st;
     public float gravity;
     float sp = 0.05f;//speed
@@ -21,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     public float PlayerX = 0;
     //private float jumpPos = 0.0f;
     //float jumpHeight;
-    public float Jumppower;
+    float Jumppower = 95;
     private Animator anim;
     private bool isGround = false;
     private Rigidbody2D rbody2D = null;
@@ -31,17 +29,17 @@ public class PlayerMove : MonoBehaviour
     private float Y = -45;
     Vector3 pos_other;
     private bool swap = true;
+    public static float l_last_pos;
 
     // Start is called before the first frame update
     void Start()
     {
-        gc_L = GetComponent<GameoverCheck>();
-        gc_R = GetComponent<GameoverCheck_R>();
         rbody2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("run", false);
         pos = this.gameObject.transform.position;
         pos_other = other.transform.position;
+        l_last_pos = 0;
     }
 
     // Update is called once per frame
@@ -51,21 +49,24 @@ public class PlayerMove : MonoBehaviour
         {
 
             anim.SetTrigger("down");
+            l_last_pos = this.gameObject.transform.position.x;
         }
 
         else if (Time.timeScale == 1)
         {
+
             pos = this.gameObject.transform.position;
             pos_other = other.transform.position;
             if (ground.IsGround())//地面に接地しているとき
             {
+                rbody2D.velocity = new Vector3(9, rbody2D.velocity.y, 0);
                 isGround = true;
                 if (swap)
                 {
                     if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.right, ForceMode2D.Impulse);
                     }
                     else
                     {
@@ -77,7 +78,7 @@ public class PlayerMove : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.right, ForceMode2D.Impulse);
                     }
                     else
                     {
@@ -86,12 +87,10 @@ public class PlayerMove : MonoBehaviour
                 }
             }
             
-
-            rbody2D.velocity = new Vector3(6, rbody2D.velocity.y, 0);
         }
         
     }
-        //Debug.Log(rbody2D.velocity.y);
+
 
 
     public void SwapKey()
