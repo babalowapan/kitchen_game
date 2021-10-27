@@ -66,7 +66,7 @@ public class PlayerMove_R : MonoBehaviour
                 if (swap) {
                 if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                 {
-                    rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left*15, ForceMode2D.Impulse);
+                    rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left*20, ForceMode2D.Impulse);
                 }
                 else
                 {
@@ -79,7 +79,7 @@ public class PlayerMove_R : MonoBehaviour
                     {
                         //anim.SetBool("run", false);
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left*15, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left*20, ForceMode2D.Impulse);
                     }
                     else
                     {
