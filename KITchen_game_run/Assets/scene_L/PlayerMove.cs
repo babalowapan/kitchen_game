@@ -29,6 +29,7 @@ public class PlayerMove : MonoBehaviour
     private float Y = -45;
     Vector3 pos_other;
     private bool swap = true;
+    public static float l_last_pos;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class PlayerMove : MonoBehaviour
         anim.SetBool("run", false);
         pos = this.gameObject.transform.position;
         pos_other = other.transform.position;
+        l_last_pos = 0;
     }
 
     // Update is called once per frame
@@ -47,6 +49,7 @@ public class PlayerMove : MonoBehaviour
         {
 
             anim.SetTrigger("down");
+            l_last_pos = this.gameObject.transform.position.x;
         }
 
         else if (Time.timeScale == 1)

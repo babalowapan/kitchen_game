@@ -23,11 +23,12 @@ public class PlayerMove_R : MonoBehaviour
     private Rigidbody2D rbody2D = null;
     private float move;
     public static float time;
-    private float Y = -45;
+    private float Y = -50;
     public GameObject other;
     Vector3 pos;
     Vector3 pos_other;
     private bool swap = true;
+    public static float r_last_pos;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class PlayerMove_R : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetBool("run", false);
         pos_other = other.transform.position;
+        r_last_pos = 0;
 
     }
 
@@ -49,6 +51,7 @@ public class PlayerMove_R : MonoBehaviour
             anim.SetTrigger("down");
             time = timer;
             Debug.Log("tttt");
+            r_last_pos = this.gameObject.transform.position.x;
             FadeManager.FadeOut(2);
             this.gameObject.SetActive(false);
             Time.timeScale = 0;
