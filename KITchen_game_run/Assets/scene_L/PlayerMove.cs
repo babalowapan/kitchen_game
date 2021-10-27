@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
     public float time;
     public GameObject other;
     Vector3 pos;
-    private float Y = -45;
+    private float Y = -50;
     Vector3 pos_other;
     private bool swap = true;
     public static float l_last_pos;
