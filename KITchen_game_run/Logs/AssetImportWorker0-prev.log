@@ -23,111 +23,111 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53193
+57899
 Successfully changed project path to: /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run
 /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 163.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 146.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.21f1 (f2d5d3c59f8c)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.21f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-2021-10-27 17:03:20.567 Unity[45622:7009058] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-10-27 17:03:20.567 Unity[45622:7009058] Metal devices available: 1
-2021-10-27 17:03:20.567 Unity[45622:7009058] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-10-27 17:03:20.567 Unity[45622:7009058] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-10-27 21:50:11.517 Unity[48814:7164828] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-10-27 21:50:11.518 Unity[48814:7164828] Metal devices available: 1
+2021-10-27 21:50:11.518 Unity[48814:7164828] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-10-27 21:50:11.518 Unity[48814:7164828] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.1.21f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.1.21f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.1.21f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56622
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56814
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.1.21f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.007879 seconds.
+Registered in 0.002346 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 120.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 127.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.232 seconds
+- Completed reload, in  6.869 seconds
 Domain Reload Profiling:
-	ReloadAssembly (6232ms)
-		BeginReloadAssembly (178ms)
+	ReloadAssembly (6876ms)
+		BeginReloadAssembly (158ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (657ms)
-			LoadAssemblies (179ms)
+		EndReloadAssembly (729ms)
+			LoadAssemblies (152ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
+			SetupTypeCache (287ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (307ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (327ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (121ms)
+				RefreshPlugins (128ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011006 seconds.
+Registered in 0.012041 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 130.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 125.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.006 seconds
+- Completed reload, in  1.934 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2006ms)
-		BeginReloadAssembly (312ms)
+	ReloadAssembly (1935ms)
+		BeginReloadAssembly (297ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1607ms)
-			LoadAssemblies (299ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1552ms)
+			LoadAssemblies (255ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (594ms)
+			SetupTypeCache (574ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (575ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (564ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (131ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (320ms)
+				RefreshPlugins (125ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (317ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.1.21f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 260.9 MB.
 System memory in use after: 261.1 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 4172.
-Total: 4.372378 ms (FindLiveObjects: 0.335178 ms CreateObjectMapping: 0.214963 ms MarkObjects: 3.734887 ms  DeleteObjects: 0.085919 ms)
+Total: 4.197691 ms (FindLiveObjects: 0.333728 ms CreateObjectMapping: 0.182351 ms MarkObjects: 3.554983 ms  DeleteObjects: 0.125700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -141,1048 +141,216 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/sozai/kanban/reverse.png
-  artifactKey: Guid(c3fca55916b8f4b78bff9338dd02d1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sozai/kanban/reverse.png using Guid(c3fca55916b8f4b78bff9338dd02d1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93127c6498ac202fbdbd6fde1972dd8') in 1.499084 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013728 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.582 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1582ms)
-		BeginReloadAssembly (264ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (103ms)
-		EndReloadAssembly (1241ms)
-			LoadAssemblies (227ms)
-			RebuildTransferFunctionScriptingTraits (3ms)
-			SetupTypeCache (515ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (358ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (276ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 272.5 MB.
-System memory in use after: 272.8 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4196.
-Total: 4.221242 ms (FindLiveObjects: 0.349497 ms CreateObjectMapping: 0.221821 ms MarkObjects: 3.611852 ms  DeleteObjects: 0.037089 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013894 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.441 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1441ms)
-		BeginReloadAssembly (181ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (91ms)
-		EndReloadAssembly (1183ms)
-			LoadAssemblies (116ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (512ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (355ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (272ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 272.8 MB.
-System memory in use after: 273.0 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4199.
-Total: 3.960996 ms (FindLiveObjects: 0.282370 ms CreateObjectMapping: 0.179410 ms MarkObjects: 3.467592 ms  DeleteObjects: 0.030515 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011520 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.556 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1556ms)
-		BeginReloadAssembly (255ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (94ms)
-		EndReloadAssembly (1220ms)
-			LoadAssemblies (225ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (499ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (362ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (279ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 273.1 MB.
-System memory in use after: 273.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4202.
-Total: 3.869924 ms (FindLiveObjects: 0.294800 ms CreateObjectMapping: 0.173191 ms MarkObjects: 3.368118 ms  DeleteObjects: 0.032798 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013195 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.633 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1633ms)
-		BeginReloadAssembly (285ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (105ms)
-		EndReloadAssembly (1266ms)
-			LoadAssemblies (246ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (515ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (367ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (281ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 273.3 MB.
-System memory in use after: 273.5 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4205.
-Total: 4.537360 ms (FindLiveObjects: 0.379482 ms CreateObjectMapping: 0.281694 ms MarkObjects: 3.836271 ms  DeleteObjects: 0.038870 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  path: Assets/Stage/s5_L.prefab
+  artifactKey: Guid(fae12b5a204c74998a5e1df6ce6b815c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s5_L.prefab using Guid(fae12b5a204c74998a5e1df6ce6b815c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48eacd7125e2fa4dd03ade13ab36d79a') in 2.277196 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 709.191647 seconds.
-  path: Assets/Stage/s2_R.prefab
-  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202540b2d11092335254591d16c5a590') in 1.739611 seconds 
+  Time since last request: 0.000302 seconds.
+  path: Assets/Stage/s5_R.prefab
+  artifactKey: Guid(642551c8622a74b9bbda1d1f003885d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s5_R.prefab using Guid(642551c8622a74b9bbda1d1f003885d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db561770eda8632f31c1b2218a97d529') in 0.156227 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Stage/tutorial_R.prefab
-  artifactKey: Guid(b5eb3fb84ab6d463b858f0db885ea119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/tutorial_R.prefab using Guid(b5eb3fb84ab6d463b858f0db885ea119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f977c8bec71a4ada4cf28a63aec66049') in 0.376012 seconds 
+  Time since last request: 8.927573 seconds.
+  path: Assets/Stage/s1_L.prefab
+  artifactKey: Guid(ad38a862f1c5e4acbaec10d9f9242e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s1_L.prefab using Guid(ad38a862f1c5e4acbaec10d9f9242e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc4b52b7bc54c9656a82a7830d839da') in 0.188385 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 161.654251 seconds.
-  path: Assets/Stage/s3_L.prefab
-  artifactKey: Guid(73b07fe17db634b57b78893af842abc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s3_L.prefab using Guid(73b07fe17db634b57b78893af842abc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b6c1a96a07ccd25e146cbacf67d03a') in 0.408369 seconds 
+  Time since last request: 13.855592 seconds.
+  path: Assets/Stage/s1_R.prefab
+  artifactKey: Guid(ae503ae33783a41159c4f7c16d26576f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s1_R.prefab using Guid(ae503ae33783a41159c4f7c16d26576f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e691a146e170d5365f016159f2765eb4') in 0.284999 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.798963 seconds.
-  path: Assets/Stage/s3_R.prefab
-  artifactKey: Guid(86b7084cb1b1d4ef8a20e80c523f7024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s3_R.prefab using Guid(86b7084cb1b1d4ef8a20e80c523f7024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea3354725533538142de98a441da303') in 0.179331 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 291.607368 seconds.
-  path: Assets/Stage/s3_L 1.prefab
-  artifactKey: Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s3_L 1.prefab using Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a9b72248d3089ea5b74b6157822a6d') in 0.646208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.855094 seconds.
-  path: Assets/Stage/s3_R 1.prefab
-  artifactKey: Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s3_R 1.prefab using Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd550e7778cdef73e579c21b7a09613a6') in 0.179894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.303784 seconds.
-  path: Assets/Stage/s4_L.prefab
-  artifactKey: Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s4_L.prefab using Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3b2faf2d134a81befb0921a6590d80') in 0.199989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.386325 seconds.
-  path: Assets/Stage/s4_R.prefab
-  artifactKey: Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s4_R.prefab using Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e066fe4f137242d5132979c4bc7688f4') in 0.160988 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.069150 seconds.
-  path: Assets/Stage/s4_L.prefab
-  artifactKey: Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s4_L.prefab using Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de5e77b1c30ae672e662696f0e2649b') in 0.326081 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.278995 seconds.
-  path: Assets/Stage/s4_R.prefab
-  artifactKey: Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s4_R.prefab using Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff41c854167bdf5b3ccb10029f54bf5') in 0.169297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 164.899097 seconds.
+  Time since last request: 17.296872 seconds.
   path: Assets/Stage/s2_L.prefab
   artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31279da86610145912307d9dab6b59d') in 0.125981 seconds 
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1db744e67ef4302b6045a2a07100f10') in 0.132254 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.992794 seconds.
+  Time since last request: 10.697252 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6674259c6c0e699b13fbd5b634d8131b') in 0.107955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.679070 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7309134f1040c8a4be6e63325a7eaf9') in 0.111814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.775499 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3154ea90b47466d373c934cb51835d4b') in 0.096004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.887565 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a142d9fdc8d3c94d59b753e1166ef409') in 0.133283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.843145 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782ec61da977fa5ee2d55aa509f06bae') in 0.148580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.275981 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20efb0cf7c743d8c2a16446d1c3ae9c') in 0.132220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.073070 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812a4c483df568918158024517954936') in 0.107710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.457884 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcb262fb522ad14766fbdfa897e20e9') in 0.105933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.097836 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89aaaf338bf6e218f97a1d45c8a63272') in 0.098751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.822708 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1995da8e4461a778cb654ccabe0455') in 0.124631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.072063 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f523029202a36ce944cdbb83c81fdd5f') in 0.102687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.109338 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08684e6ccbfab63ed34cdbec4d7f8221') in 0.136600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.053972 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d08f7442ded94ddecfc0f9925960f2') in 0.189227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.537684 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8164f99190a21ff8897817a1072cbc6') in 0.165331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.434753 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb7b048384a82f2408f6cb6b86ade50a') in 0.107631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.953398 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9c2266782535d691f80dd85ad1307d') in 0.178888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.549653 seconds.
+  path: Assets/Stage/s2_L.prefab
+  artifactKey: Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_L.prefab using Guid(09f5def8b58014b35a12f88fe4ee8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6614369b194a9b9094f38110aef618') in 0.112012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.731898 seconds.
   path: Assets/Stage/s2_R.prefab
   artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9ae1dc9670449c804da2ca40b58787') in 0.290635 seconds 
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92118b72f95e9fcbc139fbccce2e42b') in 0.443921 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.485295 seconds.
+  Time since last request: 13.179002 seconds.
   path: Assets/Stage/s2_R.prefab
   artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e7c749f01f7a2aba51dad17ff070e1') in 0.153853 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006669 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.837 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1839ms)
-		BeginReloadAssembly (421ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (24ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (206ms)
-		EndReloadAssembly (1336ms)
-			LoadAssemblies (252ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (570ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (378ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (291ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 278.4 MB.
-System memory in use after: 278.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4212.
-Total: 5.234455 ms (FindLiveObjects: 0.360531 ms CreateObjectMapping: 0.238875 ms MarkObjects: 4.596339 ms  DeleteObjects: 0.037450 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c11fb4028ac0e8aefeab97313496bc9') in 0.321686 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 446.441868 seconds.
-  path: Assets/tst.unity
-  artifactKey: Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/tst.unity using Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7222dac8806ab8a292bbb51f4e26c12d') in 0.028538 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013345 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.617 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1618ms)
-		BeginReloadAssembly (257ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (107ms)
-		EndReloadAssembly (1280ms)
-			LoadAssemblies (223ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (521ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (378ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (69ms)
-				ProcessInitializeOnLoadAttributes (286ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 278.7 MB.
-System memory in use after: 278.9 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4215.
-Total: 4.803955 ms (FindLiveObjects: 0.355843 ms CreateObjectMapping: 0.247043 ms MarkObjects: 4.178356 ms  DeleteObjects: 0.021425 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010969 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.632 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1633ms)
-		BeginReloadAssembly (251ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (87ms)
-		EndReloadAssembly (1288ms)
-			LoadAssemblies (235ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (536ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (379ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (295ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 278.9 MB.
-System memory in use after: 279.2 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4218.
-Total: 5.142414 ms (FindLiveObjects: 0.319855 ms CreateObjectMapping: 0.195904 ms MarkObjects: 4.599654 ms  DeleteObjects: 0.025359 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006955 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.277 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2279ms)
-		BeginReloadAssembly (452ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (28ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (223ms)
-		EndReloadAssembly (1707ms)
-			LoadAssemblies (317ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (788ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (430ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (332ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 279.1 MB.
-System memory in use after: 279.4 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4221.
-Total: 5.346997 ms (FindLiveObjects: 0.325872 ms CreateObjectMapping: 0.203886 ms MarkObjects: 4.758356 ms  DeleteObjects: 0.057260 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008313 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.618 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1625ms)
-		BeginReloadAssembly (236ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (118ms)
-		EndReloadAssembly (1303ms)
-			LoadAssemblies (134ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (569ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (389ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (296ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 279.4 MB.
-System memory in use after: 279.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4224.
-Total: 4.013047 ms (FindLiveObjects: 0.341580 ms CreateObjectMapping: 0.241336 ms MarkObjects: 3.408537 ms  DeleteObjects: 0.020639 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 0.860102 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fb053572b0f5440660857f167270df') in 0.148360 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 127.498890 seconds.
-  path: Assets/scene_L/PlayerMove.cs
-  artifactKey: Guid(9bda7cdaf3180443d9630abb59a2e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scene_L/PlayerMove.cs using Guid(9bda7cdaf3180443d9630abb59a2e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '122b5cb28e246411a67054521e920a5f') in 4.684794 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017119 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.866 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1870ms)
-		BeginReloadAssembly (340ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (26ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (164ms)
-		EndReloadAssembly (1425ms)
-			LoadAssemblies (219ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (611ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (408ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (312ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 283.8 MB.
-System memory in use after: 284.1 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4227.
-Total: 4.060820 ms (FindLiveObjects: 0.285574 ms CreateObjectMapping: 0.162998 ms MarkObjects: 3.590257 ms  DeleteObjects: 0.020786 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011819 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.499 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1500ms)
-		BeginReloadAssembly (181ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (93ms)
-		EndReloadAssembly (1241ms)
-			LoadAssemblies (114ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (536ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (375ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (290ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 284.1 MB.
-System memory in use after: 284.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4230.
-Total: 4.209787 ms (FindLiveObjects: 0.289406 ms CreateObjectMapping: 0.179656 ms MarkObjects: 3.718674 ms  DeleteObjects: 0.020780 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 2.695304 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0adbc5fdf5a0e8756e76ed446da18577') in 0.163886 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.766312 seconds.
-  path: Assets/tst.unity
-  artifactKey: Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/tst.unity using Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d31efc88019e841c46d883b40dccef') in 0.014090 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014731 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.608 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1628ms)
-		BeginReloadAssembly (293ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (92ms)
-		EndReloadAssembly (1258ms)
-			LoadAssemblies (270ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (507ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (367ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (284ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 284.3 MB.
-System memory in use after: 284.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4233.
-Total: 4.427947 ms (FindLiveObjects: 0.311899 ms CreateObjectMapping: 0.193924 ms MarkObjects: 3.897704 ms  DeleteObjects: 0.023208 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007332 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.478 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1478ms)
-		BeginReloadAssembly (193ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (96ms)
-		EndReloadAssembly (1202ms)
-			LoadAssemblies (124ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (518ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (363ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (280ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 284.5 MB.
-System memory in use after: 284.8 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4236.
-Total: 4.829027 ms (FindLiveObjects: 0.382991 ms CreateObjectMapping: 0.252148 ms MarkObjects: 4.159388 ms  DeleteObjects: 0.033422 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 11.622700 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2474d39be43808fc146e2adfb5a541a') in 0.215378 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.071556 seconds.
-  path: Assets/tst.unity
-  artifactKey: Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/tst.unity using Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd0e7781d3280d0b883f41f3dc40085') in 0.028256 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016728 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.600 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1601ms)
-		BeginReloadAssembly (249ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (94ms)
-		EndReloadAssembly (1271ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (517ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (372ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (288ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 284.8 MB.
-System memory in use after: 285.0 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4239.
-Total: 4.265441 ms (FindLiveObjects: 0.423057 ms CreateObjectMapping: 0.226629 ms MarkObjects: 3.582076 ms  DeleteObjects: 0.032547 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 4.413996 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2981bb78189a26c0bf188a79f7262fa') in 0.173078 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.304735 seconds.
-  path: Assets/tst.unity
-  artifactKey: Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/tst.unity using Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f670f7bdf94ab2826b3d39830f83095c') in 0.029404 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012906 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.666 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1666ms)
-		BeginReloadAssembly (277ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (112ms)
-		EndReloadAssembly (1309ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (567ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (369ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (287ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 285.0 MB.
-System memory in use after: 285.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4242.
-Total: 4.628307 ms (FindLiveObjects: 0.364171 ms CreateObjectMapping: 0.240795 ms MarkObjects: 3.978357 ms  DeleteObjects: 0.043770 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011692 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/iniad/Dropbox/Mac/Documents/kitchen/kitchen_game/KITchen_game_run/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.587 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1587ms)
-		BeginReloadAssembly (251ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (94ms)
-		EndReloadAssembly (1261ms)
-			LoadAssemblies (229ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (510ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (367ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (283ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 285.2 MB.
-System memory in use after: 285.5 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4245.
-Total: 6.198195 ms (FindLiveObjects: 0.533426 ms CreateObjectMapping: 0.363643 ms MarkObjects: 5.189734 ms  DeleteObjects: 0.109301 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 6.327565 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf4d686ef04e07bbb7500993c0cf4da') in 0.176057 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 100.911158 seconds.
-  path: Assets/tst.unity
-  artifactKey: Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/tst.unity using Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3ff0554c54ef79f08d58b421d1c880') in 0.021849 seconds 
+  Time since last request: 1.806824 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc56b52a53212f44b69e8f5f883717c') in 0.175260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.223529 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fc258c15fce5879c894270ea1faf6c') in 0.167422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.092076 seconds.
+  path: Assets/Stage/s2_R.prefab
+  artifactKey: Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s2_R.prefab using Guid(246d1812331d14c9cb2b4a613f93e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3869e2209a40bfadc62d67316808b9a') in 0.245714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.258048 seconds.
+  path: Assets/Stage/s3_L.prefab
+  artifactKey: Guid(73b07fe17db634b57b78893af842abc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s3_L.prefab using Guid(73b07fe17db634b57b78893af842abc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6ee75297f321e9ee135d9195d5466d') in 0.448269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.504943 seconds.
+  path: Assets/Stage/s3_R.prefab
+  artifactKey: Guid(86b7084cb1b1d4ef8a20e80c523f7024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s3_R.prefab using Guid(86b7084cb1b1d4ef8a20e80c523f7024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad02a4ca479ab7ebd46dcf1a4257c491') in 0.217364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.004883 seconds.
+  path: Assets/Stage/s4_L.prefab
+  artifactKey: Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s4_L.prefab using Guid(ed0aa59dc7a5c40b7ad60cba5ab5cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef71b8e4795d81e2e07ca8474683c51') in 0.406730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.912766 seconds.
+  path: Assets/Stage/s4_R.prefab
+  artifactKey: Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage/s4_R.prefab using Guid(24db9b1f1c6a2442081f95738f3d250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b882421cf82f8f1e25fe4611030d34') in 0.192056 seconds 
