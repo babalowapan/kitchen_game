@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5979771725804647864}
   - component: {fileID: 844686780456403408}
   m_Layer: 0
-  m_Name: SwitchFloor
+  m_Name: Switch
   m_TagString: stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
