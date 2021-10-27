@@ -20,10 +20,10 @@ public class Score : MonoBehaviour
 	{
 		FadeManager.FadeIn();
 		ScoreText = GetComponent<Text>();
-		score = PlayerMove.l_last_pos - 15;
-		if (score <= PlayerMove_R.r_last_pos * -1 - 15)
+		score = PlayerMove.l_last_pos;
+		if (score <= PlayerMove_R.r_last_pos * -1)
         {
-			score = PlayerMove_R.r_last_pos * -1 - 15;
+			score = PlayerMove_R.r_last_pos * -1;
 		}
 		score = score / 10;
 		T_time = "Score:" + score.ToString("00");
