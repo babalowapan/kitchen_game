@@ -57,7 +57,6 @@ public class PlayerMove : MonoBehaviour
 
             pos = this.gameObject.transform.position;
             pos_other = other.transform.position;
-            rbody2D.velocity = new Vector3(7, rbody2D.velocity.y, 0);
             if (ground.IsGround())//地面に接地しているとき
             {
                 isGround = true;
@@ -66,11 +65,12 @@ public class PlayerMove : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 10, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.right * 70, ForceMode2D.Impulse);
                     }
                     else
                     {
                         anim.SetBool("run", true);
+                        rbody2D.velocity = new Vector3(7, rbody2D.velocity.y, 0);
                     }
                 }
                 else
@@ -78,11 +78,12 @@ public class PlayerMove : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
-                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 10, ForceMode2D.Impulse);
+                        rbody2D.AddForce(Vector3.up * Jumppower + Vector3.right * 70, ForceMode2D.Impulse);
                     }
                     else
                     {
                         anim.SetBool("run", true);
+                        rbody2D.velocity = new Vector3(7, rbody2D.velocity.y, 0);
                     }
                 }
             }
