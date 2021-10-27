@@ -776,6 +776,7 @@ Received Import Request.
   Time since last request: 0.000413 seconds.
   path: Assets/sozai/switch1/SwitchFloor.prefab
   artifactKey: Guid(69402ce72450047099cc29523c291569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+<<<<<<< Updated upstream
 Start importing Assets/sozai/switch1/SwitchFloor.prefab using Guid(69402ce72450047099cc29523c291569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3692672a1b4ede4538c3f5f23b96a25') in 0.209906 seconds 
 ========================================================================
 Received Import Request.
@@ -903,3 +904,12 @@ Received Import Request.
   path: Assets/sozai/kanban/pic/← 1.png
   artifactKey: Guid(9c7e0e89f926d4da59580fc104d50c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/sozai/kanban/pic/← 1.png using Guid(9c7e0e89f926d4da59580fc104d50c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730eb0259f3ce5081909c76fd5fac661') in 0.117279 seconds 
+=======
+Start importing Assets/sozai/switch1/Switch.prefab using Guid(69402ce72450047099cc29523c291569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec5a752cae1a54fc0f4702862fa4b37') in 0.181048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 868.992825 seconds.
+  path: Assets/tst.unity
+  artifactKey: Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tst.unity using Guid(7b1cb98e9f7f549e49a5282a3ce7b616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32a5ef5e624d565a212a160458ae182') in 0.037688 seconds 
+>>>>>>> Stashed changes
