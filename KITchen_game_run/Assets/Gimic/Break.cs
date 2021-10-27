@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Break : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Break : MonoBehaviour
     Vector3 pos1;
     Vector3 pos2;
     Vector3 obj_pos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,7 @@ public class Break : MonoBehaviour
         pos2 = target2.transform.position;
         if (pos2.x+100 <= obj_pos.x && obj_pos.x<=pos1.x-100)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
     }
