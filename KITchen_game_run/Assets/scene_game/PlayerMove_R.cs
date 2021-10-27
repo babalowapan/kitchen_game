@@ -65,7 +65,7 @@ public class PlayerMove_R : MonoBehaviour
                 if (swap) {
                 if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                 {
-                    rbody2D.AddForce(Vector2.up * Jumppower, ForceMode2D.Impulse);
+                    rbody2D.AddForce(Vector3.up * Jumppower + Vector3.left * 10, ForceMode2D.Impulse);
                 }
                 else
                 {
