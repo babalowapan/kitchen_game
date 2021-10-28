@@ -57,6 +57,8 @@ public class PlayerMove : MonoBehaviour
         else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
         {
             l_last_pos = this.transform.position.x;
+            Debug.Log(l_last_pos);
+            anim.SetTrigger("down");
             FadeManager.FadeOut(2);
         }
 

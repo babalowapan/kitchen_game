@@ -47,12 +47,14 @@ public class PlayerMove_R : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        pos = this.gameObject.transform.position;
         if (pos.y <= Y||pos_other.y <= Y)
         {
             anim.SetTrigger("down");
             r_time = 0;
             Debug.Log("tttt");
-            r_last_pos = this.gameObject.transform.position.x;
+            r_last_pos = this.gameObject.transform.position.x * -1;
+            Debug.Log(r_last_pos);
             FadeManager.FadeOut(2);
             this.gameObject.SetActive(false);
             Time.timeScale = 0;
@@ -60,7 +62,8 @@ public class PlayerMove_R : MonoBehaviour
 
         else if (PlayerMove.l_time >= 5 || r_time >= 5)
         {
-            r_last_pos = this.transform.position.x;
+            r_last_pos = this.gameObject.transform.position.x * -1;
+            anim.SetTrigger("down");
             FadeManager.FadeOut(2);
         }
 
