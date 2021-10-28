@@ -24,7 +24,7 @@ public class Break : MonoBehaviour
     {
         pos1 = target1.transform.position;
         pos2 = target2.transform.position;
-        if (pos2.x+100 <= obj_pos.x && obj_pos.x<=pos1.x-100)
+        if (pos2.x+50 <= obj_pos.x && obj_pos.x<=pos1.x-50)
         {
             Destroy(gameObject);
         }
