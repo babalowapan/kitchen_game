@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Rez_wall : MonoBehaviour
 {
-    private Switch Switch;
     public int num;
+    private Switch Switch;
     private int check;
     private Vector3 pos;
     public float moveX;
@@ -15,20 +15,26 @@ public class Rez_wall : MonoBehaviour
     void Start()
     {
         Debug.Log(num);
-        this.Switch = FindObjectOfType<Switch>();
-        check = Switch.Move_select;
         pos = this.gameObject.transform.position;
+        this.Switch = FindObjectOfType<Switch>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (Switch.ispush)
         {
             if (Switch.Move_select == num)
             {
-                this.gameObject.transform.Translate(moveX,moveY,Time.deltaTime);
+                Move();
             }
         }
+    }
+
+    // Update is called once per frame
+    public void Move()
+    {
+        Debug.Log("iiiiii");
+        this.gameObject.transform.Translate(moveX,moveY,Time.deltaTime);
+
     }
 }
