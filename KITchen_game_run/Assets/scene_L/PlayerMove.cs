@@ -23,9 +23,10 @@ public class PlayerMove : MonoBehaviour
     private Animator anim;
     private bool isGround = false;
     private Rigidbody2D rbody2D = null;
-    public float time;
+    public static float l_time;
     public GameObject other;
     Vector3 pos;
+    Vector3 ago_pos;
     private float Y = -50;
     Vector3 pos_other;
     private bool swap = true;
@@ -40,6 +41,7 @@ public class PlayerMove : MonoBehaviour
         pos = this.gameObject.transform.position;
         pos_other = other.transform.position;
         l_last_pos = 0;
+        l_time = 0;
     }
 
     // Update is called once per frame
@@ -50,6 +52,12 @@ public class PlayerMove : MonoBehaviour
 
             anim.SetTrigger("down");
             l_last_pos = this.gameObject.transform.position.x;
+        }
+
+        else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
+        {
+            l_last_pos = this.transform.position.x;
+            FadeManager.FadeOut(2);
         }
 
         else if (Time.timeScale == 1)
@@ -85,6 +93,16 @@ public class PlayerMove : MonoBehaviour
                         anim.SetBool("run", true);
                     }
                 }
+                if(pos.x == ago_pos.x)
+                {
+                    l_time += Time.deltaTime;
+                }
+                else
+                {
+                    l_time = 0;
+                }
+                ago_pos = this.gameObject.transform.position;
+
             }
             
         }

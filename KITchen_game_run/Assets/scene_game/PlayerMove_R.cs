@@ -22,13 +22,14 @@ public class PlayerMove_R : MonoBehaviour
     private bool isGround = false;
     private Rigidbody2D rbody2D = null;
     private float move;
-    public static float time;
+    public static float r_time;
     private float Y = -50;
     public GameObject other;
     Vector3 pos;
     Vector3 pos_other;
     private bool swap = true;
     public static float r_last_pos;
+    Vector3 ago_pos;
 
     // Start is called before the first frame update
     void Start()
@@ -49,13 +50,20 @@ public class PlayerMove_R : MonoBehaviour
         if (pos.y <= Y||pos_other.y <= Y)
         {
             anim.SetTrigger("down");
-            time = timer;
+            r_time = 0;
             Debug.Log("tttt");
             r_last_pos = this.gameObject.transform.position.x;
             FadeManager.FadeOut(2);
             this.gameObject.SetActive(false);
             Time.timeScale = 0;
         }
+
+        else if (PlayerMove.l_time >= 5 || r_time >= 5)
+        {
+            r_last_pos = this.transform.position.x;
+            FadeManager.FadeOut(2);
+        }
+
         else if(Time.timeScale == 1)
         {
 
@@ -66,6 +74,7 @@ public class PlayerMove_R : MonoBehaviour
                 if (swap) {
                 if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
                 {
+                    rbody2D.velocity = new Vector3(rbody2D.velocity.x, 0, 0);
                     rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
                 }
                 else
@@ -77,6 +86,7 @@ public class PlayerMove_R : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
                     {
+                        rbody2D.velocity = new Vector3(rbody2D.velocity.x, 0, 0);
                         //anim.SetBool("run", false);
                         //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
@@ -85,11 +95,19 @@ public class PlayerMove_R : MonoBehaviour
                     {
                         anim.SetBool("run", true);
                     }
+
                 }
+                if (pos.x == ago_pos.x)
+                {
+                    r_time += Time.deltaTime;
+                }
+                else
+                {
+                    r_time = 0;
+                }
+                ago_pos = this.gameObject.transform.position;
             }
 
-            timer += Time.deltaTime;
-            move = timer * sp;
 
         }
     }
