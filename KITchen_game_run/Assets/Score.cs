@@ -19,14 +19,17 @@ public class Score : MonoBehaviour
 	void Start()
 	{
 		FadeManager.FadeIn();
+		Debug.Log(PlayerMove.l_last_pos);
+		Debug.Log(PlayerMove_R.r_last_pos);
 		ScoreText = GetComponent<Text>();
 		score = PlayerMove.l_last_pos;
 		Debug.Log(score);
 		if (score >= PlayerMove_R.r_last_pos)
         {
-			score = PlayerMove_R.r_last_pos;
+			score = PlayerMove_R.r_last_pos*-1;
+			Debug.Log(score);
 		}
-		T_time = "Score:" + score.ToString("00");
+		T_time = "Score:" + score.ToString("0000");
 		Debug.Log(T_time);
 	}
 
