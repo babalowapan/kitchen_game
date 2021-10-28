@@ -16,6 +16,7 @@ public class Switch : MonoBehaviour
 	GameObject s;
 	private Rez_wall rez_Wall;
 	private Rez_wall_v2 rez_Wall_V2;
+	GameObject swap;
 	public int move_select;	//スイッチと連動させる壁を指定したい
 	public int Move_select
     {
@@ -40,6 +41,7 @@ public class Switch : MonoBehaviour
 		s_R = GameObject.Find("CameraSwap_R");
 		s_Lk = GameObject.Find("silver");
 		s_Rk = GameObject.Find("gold");
+		swap = GameObject.Find("SwapUI");
 	}
 
 	// Update is called once per frame
@@ -62,6 +64,8 @@ public class Switch : MonoBehaviour
 				{
 					s_Lk.GetComponent<PlayerMove>().SwapKey();
 					s_Rk.GetComponent<PlayerMove_R>().SwapKey();
+					swap.GetComponent<SwapUI>().swapUI();
+					
 				}
 				
 				check = false;

@@ -13,7 +13,7 @@ public class SwapUI : MonoBehaviour
 }
 
     // Update is called once per frame
-    void swapUI()
+    public void swapUI()
     {
         if (swap == false)
         {
