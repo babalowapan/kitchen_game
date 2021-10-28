@@ -60,12 +60,12 @@ public class PlayerMove_R : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        else if (PlayerMove.l_time >= 5 || r_time >= 5)
+        /*else if (PlayerMove.l_time >= 5 || r_time >= 5)
         {
             r_last_pos = this.gameObject.transform.position.x * -1;
             anim.SetTrigger("down");
             FadeManager.FadeOut(2);
-        }
+        }*/
 
         else if(Time.timeScale == 1)
         {

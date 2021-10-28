@@ -54,13 +54,13 @@ public class PlayerMove : MonoBehaviour
             l_last_pos = this.gameObject.transform.position.x;
         }
 
-        else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
+        /*else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
         {
             l_last_pos = this.transform.position.x;
             Debug.Log(l_last_pos);
             anim.SetTrigger("down");
             FadeManager.FadeOut(2);
-        }
+        }*/
 
         else if (Time.timeScale == 1)
         {
