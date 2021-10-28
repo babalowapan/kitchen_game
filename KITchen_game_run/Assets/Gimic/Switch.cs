@@ -63,14 +63,7 @@ public class Switch : MonoBehaviour
 					s_Lk.GetComponent<PlayerMove>().SwapKey();
 					s_Rk.GetComponent<PlayerMove_R>().SwapKey();
 				}
-				else if (move_select == rez_Wall.num)
-				{
-					rez_Wall.Move();
-				}
-				else if (move_select == rez_Wall_V2.num)
-                {
-					rez_Wall_V2.Move();
-                }
+				
 				check = false;
 			}
 			IsPush = true;

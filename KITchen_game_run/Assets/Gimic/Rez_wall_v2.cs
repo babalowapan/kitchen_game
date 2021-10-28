@@ -18,7 +18,6 @@ public class Rez_wall_v2 : MonoBehaviour
     {
         Debug.Log(num);
         this.Switch = FindObjectOfType<Switch>();
-        check = Switch.Move_select;
         pos = this.gameObject.transform.position;
         target = new Vector3(pos.x+moveX, pos.y+moveY,1);
     }
@@ -35,7 +34,7 @@ public class Rez_wall_v2 : MonoBehaviour
         }
     }
 
-    public void Move()
+    void Move()
     {
         gameObject.transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * sp);
     }
