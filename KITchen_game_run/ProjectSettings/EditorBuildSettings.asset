@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/tst.unity
     guid: 7b1cb98e9f7f549e49a5282a3ce7b616
+  - enabled: 1
+    path: Assets/tst 1.unity
+    guid: a5d816730c06e0f48bdb748d6ef2d640
   m_configObjects: {}

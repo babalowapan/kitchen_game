@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2659170136623722602}
   - component: {fileID: 6125764052343916880}
-  - component: {fileID: 4533505358921746527}
+  - component: {fileID: 222784219988155034}
   m_Layer: 0
   m_Name: BackMountans
   m_TagString: Untagged
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4533505358921746527
+--- !u!114 &222784219988155034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,6 +93,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3112015972807951551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f879ea97d4204436ca00ccade31789f1, type: 3}
+  m_Script: {fileID: 11500000, guid: a2348c470a03e432d9b316eb3c61ed1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
