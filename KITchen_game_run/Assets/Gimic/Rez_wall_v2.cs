@@ -35,8 +35,8 @@ public class Rez_wall_v2 : MonoBehaviour
         }
     }
 
-    void Move()
+    public void Move()
     {
-        this.gameObject.transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * sp);
+        gameObject.transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * sp);
     }
 }

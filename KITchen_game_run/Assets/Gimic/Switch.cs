@@ -13,6 +13,9 @@ public class Switch : MonoBehaviour
 	GameObject s_R;
 	GameObject s_Lk;
 	GameObject s_Rk;
+	GameObject s;
+	private Rez_wall rez_Wall;
+	private Rez_wall_v2 rez_Wall_V2;
 	public int move_select;	//スイッチと連動させる壁を指定したい
 	public int Move_select
     {
@@ -31,6 +34,8 @@ public class Switch : MonoBehaviour
 	{
 		rb = this.gameObject.GetComponent<Rigidbody2D>();
 		col = this.gameObject.GetComponent<BoxCollider2D>();
+		this.rez_Wall = FindObjectOfType<Rez_wall>();
+		this.rez_Wall_V2 = FindObjectOfType<Rez_wall_v2>();
 		s_L = GameObject.Find("CameraSwap");
 		s_R = GameObject.Find("CameraSwap_R");
 		s_Lk = GameObject.Find("silver");
@@ -48,16 +53,24 @@ public class Switch : MonoBehaviour
 		{
 			if (collision.tag == "under_c")
 			{
-				if(move_select == 2)
-                {
+				if (move_select == 2)
+				{
 					s_L.GetComponent<CameraSwap>().swap_L();
 					s_R.GetComponent<CameraSwap_R>().swap_R();
-                }
+				}
 				else if (move_select == 3)
-                {
+				{
 					s_Lk.GetComponent<PlayerMove>().SwapKey();
 					s_Rk.GetComponent<PlayerMove_R>().SwapKey();
 				}
+				else if (move_select == rez_Wall.num)
+				{
+					rez_Wall.Move();
+				}
+				else if (move_select == rez_Wall_V2.num)
+                {
+					rez_Wall_V2.Move();
+                }
 				check = false;
 			}
 			IsPush = true;
