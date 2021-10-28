@@ -49,9 +49,9 @@ public class PlayerMove : MonoBehaviour
     {
         if (pos.y <= Y || pos_other.y <= Y)
         {
-
-            anim.SetTrigger("down");
             l_last_pos = this.gameObject.transform.position.x;
+            anim.SetTrigger("down");
+           
         }
 
         /*else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
