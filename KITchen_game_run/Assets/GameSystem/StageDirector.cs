@@ -15,11 +15,13 @@ public class StageDirector : MonoBehaviour
     Vector3 pos1;
     Vector3 pos2;
     float f_pos;
-    float pos= 280;
+    float pos= 300;
     float check_pos = 200;
-    int st_len = 3;
+    int st_len = 13;
     GameObject tar_l;
     GameObject tar_r;
+    int i = 0;
+    bool check = false;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +40,20 @@ public class StageDirector : MonoBehaviour
         pos2 = target2.transform.position;
         if(pos1.x >= check_pos || pos2.x <= check_pos * -1)
         {
-            int i = Random.Range(1,st_len+1);
+            if (check)
+            {
+                i = Random.Range(7, st_len + 1);
+            }
+            else
+            {
+                i++;
+            }
+
+            if (i==13)
+            {
+                check = true;
+            }
+            
             StageCreate(i, pos);
             check_pos += 390;
             pos += 390;
