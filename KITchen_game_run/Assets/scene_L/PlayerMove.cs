@@ -14,7 +14,6 @@ public class PlayerMove : MonoBehaviour
     public StageCheck ground; //new
     public StopFloor st;
     public float gravity;
-    float sp = 0.05f;//speed
     //float flap = 1000f;
     public float PlayerX = 0;
     //private float jumpPos = 0.0f;
@@ -54,13 +53,13 @@ public class PlayerMove : MonoBehaviour
            
         }
 
-        /*else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
+        else if (l_time >= 5 || PlayerMove_R.r_time >= 5)
         {
             l_last_pos = this.transform.position.x;
             Debug.Log(l_last_pos);
             anim.SetTrigger("down");
             FadeManager.FadeOut(2);
-        }*/
+        }
 
         else if (Time.timeScale == 1)
         {

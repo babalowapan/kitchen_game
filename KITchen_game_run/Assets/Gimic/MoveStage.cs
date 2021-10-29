@@ -8,8 +8,6 @@ public class MoveStage : MonoBehaviour
     float setY;
     private GameObject instance;
     private Rigidbody2D rbody2D = null;
-    private bool up_down = true;
-    private Vector3 defaultPos;
     public Vector3 setPos;
 
     void CreateMoveStage(float x, float y, float z)

@@ -11,8 +11,6 @@ public class PlayerMove_R : MonoBehaviour
     public float speed;
     public StageCheck_R ground; //new
     public float gravity;
-    float sp = 0.05f;//speed
-    float timer = 0;
     //float flap = 1000f;
     public float PlayerX = 0;
     //private float jumpPos = 0.0f;
@@ -58,12 +56,12 @@ public class PlayerMove_R : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        /*else if (PlayerMove.l_time >= 5 || r_time >= 5)
+        else if (PlayerMove.l_time >= 5 || r_time >= 5)
         {
             r_last_pos = this.gameObject.transform.position.x * -1;
             anim.SetTrigger("down");
             FadeManager.FadeOut(2);
-        }*/
+        }
 
         else if(Time.timeScale == 1)
         {

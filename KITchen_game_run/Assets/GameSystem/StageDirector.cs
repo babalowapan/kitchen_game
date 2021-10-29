@@ -26,16 +26,19 @@ public class StageDirector : MonoBehaviour
     public GameObject s9_r;
     public GameObject s10_l;
     public GameObject s10_r;
+    public GameObject s11_l;
+    public GameObject s11_r;
     Vector3 pos1;
     Vector3 pos2;
     float f_pos;
     float pos= 300;
     float check_pos = 200;
-    int st_len = 13;
+    int st_len = 11;
     GameObject tar_l;
     GameObject tar_r;
     int i = 0;
     bool check = false;
+    float time;
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +66,7 @@ public class StageDirector : MonoBehaviour
                 i++;
             }
 
-            if (i==13)
+            if (i==11)
             {
                 check = true;
             }
@@ -92,6 +95,46 @@ public class StageDirector : MonoBehaviour
         {
             tar_l = s3_l;
             tar_r = s3_r;
+        }
+        else if (x == 4)
+        {
+            tar_l = s4_l;
+            tar_r = s4_r;
+        }
+        else if (x == 5)
+        {
+            tar_l = s5_l;
+            tar_r = s5_r;
+        }
+        else if (x == 6)
+        {
+            tar_l = s6_l;
+            tar_r = s6_r;
+        }
+        else if (x == 7)
+        {
+            tar_l = s7_l;
+            tar_r = s7_r;
+        }
+        else if (x == 8)
+        {
+            tar_l = s8_l;
+            tar_r = s8_r;
+        }
+        else if (x == 9)
+        {
+            tar_l = s9_l;
+            tar_r = s9_r;
+        }
+        else if (x == 10)
+        {
+            tar_l = s10_l;
+            tar_r = s10_r;
+        }
+        else if (x == 11)
+        {
+            tar_l = s11_l;
+            tar_r = s11_r;
         }
 
         Instantiate(tar_l, new Vector3(y,0,1), Quaternion.identity);
