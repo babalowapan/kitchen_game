@@ -16,6 +16,7 @@ public class Move : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector3(moveX, moveY, 0);
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
