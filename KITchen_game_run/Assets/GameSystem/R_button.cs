@@ -1,21 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Pause_remove : MonoBehaviour
+public class R_button : MonoBehaviour
 {
+    public static bool r_p = false;
     // Start is called before the first frame update
     void Start()
     {
-        if (Button_f.choice)
-        {
-            this.gameObject.SetActive(false);
-        }
+        gameObject.GetComponent<Button>().onClick.AddListener(R_push);
     }
 
     // Update is called once per frame
-    void swapUI()
+    void R_push()
     {
-        
+        r_p = true;
     }
 }

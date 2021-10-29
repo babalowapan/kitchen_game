@@ -73,10 +73,11 @@ public class PlayerMove_R : MonoBehaviour
                 rbody2D.velocity = new Vector3(-9, rbody2D.velocity.y, 0);
                 isGround = true;
                 if (swap) {
-                if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
+                if (Input.GetKeyDown(KeyCode.D) || R_button.r_p)//ジャンプのキー入力
                 {
                     rbody2D.velocity = new Vector3(rbody2D.velocity.x, 0, 0);
                     rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        R_button.r_p = false;
                 }
                 else
                 {
@@ -85,12 +86,13 @@ public class PlayerMove_R : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
+                    if (Input.GetKeyDown(KeyCode.A) || L_button.l_p)//ジャンプのキー入力
                     {
                         rbody2D.velocity = new Vector3(rbody2D.velocity.x, 0, 0);
                         //anim.SetBool("run", false);
                         //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        L_button.l_p = false;
                     }
                     else
                     {

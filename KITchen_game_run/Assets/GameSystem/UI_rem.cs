@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pause_remove : MonoBehaviour
+public class UI_rem : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class Pause_remove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void swapUI()
+    void Update()
     {
         
     }

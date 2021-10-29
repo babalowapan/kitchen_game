@@ -73,10 +73,11 @@ public class PlayerMove : MonoBehaviour
                 isGround = true;
                 if (swap)
                 {
-                    if (Input.GetKeyDown(KeyCode.A))//ジャンプのキー入力
+                    if (Input.GetKeyDown(KeyCode.A) || L_button.l_p)//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        L_button.l_p = false;
                     }
                     else
                     {
@@ -85,10 +86,11 @@ public class PlayerMove : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.D))//ジャンプのキー入力
+                    if (Input.GetKeyDown(KeyCode.D) || R_button.r_p)//ジャンプのキー入力
                     {
                         //anim.SetTrigger("jumpUp");
                         rbody2D.AddForce(Vector3.up * Jumppower, ForceMode2D.Impulse);
+                        R_button.r_p = false;
                     }
                     else
                     {

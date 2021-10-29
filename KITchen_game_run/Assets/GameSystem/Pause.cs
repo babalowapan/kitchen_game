@@ -17,7 +17,7 @@ public class Pause : MonoBehaviour
 
     void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Q))
+		if (Input.GetKeyDown(KeyCode.Q) || pause_choise.rem || pau_ui.gm)
 		{
 
 			if (pauseUIInstance == false)
@@ -25,12 +25,14 @@ public class Pause : MonoBehaviour
 				Pause_Restart.SetActive(true);
 				Time.timeScale = 0f;
 				pauseUIInstance = true;
+				pau_ui.gm = false;
 			}
 			else
 			{
 				Pause_Restart.SetActive(false);
 				Time.timeScale = 1f;
 				pauseUIInstance = false;
+				pause_choise.rem = false;
 			}
 		}
 	}

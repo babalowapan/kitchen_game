@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 198523965}
   - component: {fileID: 198523964}
   - component: {fileID: 198523963}
+  - component: {fileID: 198523966}
   m_Layer: 5
   m_Name: cregit
   m_TagString: Untagged
@@ -310,6 +311,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198523961}
   m_CullTransparentMesh: 1
+--- !u!114 &198523966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198523961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4ffb0b69ee54237a61dbb517666f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239779406
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +699,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1050,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37771ddc3dda43edb69b948d4417c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
+  scene: 5
 --- !u!1 &983455502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1304,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Gemini
+  m_Text: Geminos
 --- !u!222 &1881892897
 CanvasRenderer:
   m_ObjectHideFlags: 0
